@@ -1,0 +1,198 @@
+[
+  {
+    "filename": "1.pdf",
+    "success": true,
+    "data": {
+      "series_name": "Series 2023-HQA1",
+      "report_date": "10/25/2024",
+      "beginning_balance": 12348291193.21,
+      "ending_balance": 12285993470.48,
+      "delinquency": [
+        {
+          "category": "30 Day",
+          "count": 300,
+          "balance": 96499611.0
+        },
+        {
+          "category": "60 Day",
+          "count": 81,
+          "balance": 25953626.0
+        },
+        {
+          "category": "90 Day",
+          "count": 30,
+          "balance": 14329346.0
+        },
+        {
+          "category": "120 Day",
+          "count": 20,
+          "balance": 10678117.0
+        },
+        {
+          "category": "150 Day",
+          "count": 52,
+          "balance": 6648020.0
+        },
+        {
+          "category": "180+ Day",
+          "count": 62,
+          "balance": 19090167.0
+        },
+        {
+          "category": "Bankruptcy",
+          "count": 17,
+          "balance": 19417239.0
+        },
+        {
+          "category": "Foreclosure",
+          "count": 0,
+          "balance": 4720083.0
+        },
+        {
+          "category": "REO",
+          "count": 0,
+          "balance": 0.0
+        }
+      ],
+      "filename": "1.pdf"
+    },
+    "error": null,
+    "processing_time": 9.34360122680664,
+    "approach": "gemini_vision",
+    "validation": {
+      "has_errors": false,
+      "has_warnings": false,
+      "errors": [],
+      "warnings": []
+    }
+  },
+  {
+    "filename": "10.pdf",
+    "success": true,
+    "data": {
+      "series_name": "Series 2023-HQA1",
+      "report_date": "06/25/2024",
+      "beginning_balance": 12650689171.37,
+      "ending_balance": 12568571604.18,
+      "delinquency": [
+        {
+          "category": "< 30",
+          "count": 34,
+          "balance": 11878039.49
+        },
+        {
+          "category": "30-59",
+          "count": 218,
+          "balance": 73792961.91
+        },
+        {
+          "category": "60-89",
+          "count": 72,
+          "balance": 22907408.5
+        },
+        {
+          "category": "90-119",
+          "count": 33,
+          "balance": 11377885.69
+        },
+        {
+          "category": "120-149",
+          "count": 27,
+          "balance": 9784968.39
+        },
+        {
+          "category": "150-179",
+          "count": 16,
+          "balance": 6340430.57
+        },
+        {
+          "category": "180+",
+          "count": 51,
+          "balance": 19110566.55
+        },
+        {
+          "category": "BANKRUPTCY",
+          "count": 41,
+          "balance": 14370912.13
+        },
+        {
+          "category": "FORECLOSURE",
+          "count": 6,
+          "balance": 1556972.8
+        },
+        {
+          "category": "REO",
+          "count": 1,
+          "balance": 311168.47
+        }
+      ],
+      "filename": "10.pdf"
+    },
+    "error": null,
+    "processing_time": 7.739749193191528,
+    "approach": "gemini_vision",
+    "validation": {
+      "has_errors": false,
+      "has_warnings": false,
+      "errors": [],
+      "warnings": []
+    }
+  },
+  {
+    "filename": "11.pdf",
+    "success": true,
+    "data": {
+      "series_name": "Series 2023-HQA1",
+      "report_date": "03/25/2024",
+      "beginning_balance": 12846984798.71,
+      "ending_balance": 12788454529.13,
+      "delinquency": [
+        {
+          "category": "< 30",
+          "count": 19,
+          "balance": 6834863.55
+        },
+        {
+          "category": "30-59",
+          "count": 276,
+          "balance": 92853955.78
+        },
+        {
+          "category": "60-89",
+          "count": 62,
+          "balance": 21102388.58
+        },
+        {
+          "category": "90-119",
+          "count": 28,
+          "balance": 9170099.81
+        },
+        {
+          "category": "120-149",
+          "count": 31,
+          "balance": 11646011.23
+        },
+        {
+          "category": "150-179",
+          "count": 22,
+          "balance": 7300016.48
+        },
+        {
+          "category": "180+",
+          "count": 52,
+          "balance": 20774901.83
+        }
+      ],
+      "filename": "11.pdf"
+    },
+    "error": null,
+    "processing_time": 7.427374839782715,
+    "approach": "gemini_vision",
+    "validation": {
+      "has_errors": false,
+      "has_warnings": false,
+      "errors": [],
+      "warnings": []
+    }
+  }
+]

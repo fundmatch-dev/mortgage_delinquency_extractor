@@ -1,0 +1,41 @@
+[
+  {
+    "filename": "1.pdf",
+    "success": false,
+    "data": null,
+    "error": "Extraction error: RetryError[<Future at 0x159e6ccd0 state=finished raised KeyError>]",
+    "processing_time": 9.571020126342773,
+    "approach": "pdf_text_gemini",
+    "text_extraction_metadata": {
+      "pages": 29,
+      "tables_found": 31,
+      "method": "pdfplumber"
+    }
+  },
+  {
+    "filename": "10.pdf",
+    "success": false,
+    "data": null,
+    "error": "Extraction error: RetryError[<Future at 0x1448176d0 state=finished raised KeyError>]",
+    "processing_time": 9.25381088256836,
+    "approach": "pdf_text_gemini",
+    "text_extraction_metadata": {
+      "pages": 28,
+      "tables_found": 47,
+      "method": "pdfplumber"
+    }
+  },
+  {
+    "filename": "11.pdf",
+    "success": false,
+    "data": null,
+    "error": "Extraction error: RetryError[<Future at 0x15a95d090 state=finished raised KeyError>]",
+    "processing_time": 9.178353786468506,
+    "approach": "pdf_text_gemini",
+    "text_extraction_metadata": {
+      "pages": 26,
+      "tables_found": 46,
+      "method": "pdfplumber"
+    }
+  }
+]

@@ -1,0 +1,17 @@
+2026-01-19 15:29:31,179 - INFO - Found 50 PDF files
+2026-01-19 15:29:31,180 - INFO - Limited to 3 files
+2026-01-19 15:29:31,180 - INFO - ============================================================
+2026-01-19 15:29:31,180 - INFO - APPROACH 1: Gemini Vision Direct Extraction
+2026-01-19 15:29:31,180 - INFO - ============================================================
+2026-01-19 15:29:55,758 - INFO - Approach 1 Complete: 3 successful, 0 failed
+2026-01-19 15:29:55,759 - INFO - Output saved to: /Users/anasputhawala/J2/dv01/mortgage-extraction/data/output/mortgage_data_approach1.xlsx
+2026-01-19 16:22:27,567 - INFO - Found 50 PDF files
+2026-01-19 16:22:27,567 - INFO - Limited to 3 files
+2026-01-19 16:22:27,567 - INFO - ============================================================
+2026-01-19 16:22:27,567 - INFO - APPROACH 2: PDF Text Parsing + Gemini Pro
+2026-01-19 16:22:27,567 - INFO - ============================================================
+2026-01-19 16:22:37,155 - ERROR - Extraction failed for 1.pdf: Extraction error: RetryError[<Future at 0x159e6ccd0 state=finished raised KeyError>]
+2026-01-19 16:22:46,410 - ERROR - Extraction failed for 10.pdf: Extraction error: RetryError[<Future at 0x1448176d0 state=finished raised KeyError>]
+2026-01-19 16:22:55,590 - ERROR - Extraction failed for 11.pdf: Extraction error: RetryError[<Future at 0x15a95d090 state=finished raised KeyError>]
+2026-01-19 16:22:55,618 - INFO - Approach 2 Complete: 0 successful, 3 failed
+2026-01-19 16:22:55,618 - INFO - Output saved to: /Users/anasputhawala/J2/dv01/mortgage-extraction/data/output/mortgage_data_approach2.xlsx
