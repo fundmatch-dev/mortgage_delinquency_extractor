@@ -13,18 +13,43 @@ from .validators import ExtractedDocument, DelinquencyCategory
 
 EXTRACTION_PROMPT = """You are an expert at extracting structured data from mortgage-backed securities trustee reports.
 
-Analyze this PDF document and extract the following information:
+This PDF is 20-30 pages long. Your task is to locate specific sections and extract data accurately.
 
-1. **series_name**: The series identifier (e.g., "Series 2025-2", "GSAMP Trust 2006-S1", etc.) Usually this will be found at the start of the document. 
-2. **report_date**: The date of this report (format as MM/DD/YYYY)
-3. **beginning_balance**: The total beginning balance of the loan pool (dollar amount)
-4. **ending_balance**: The total ending balance of the loan pool (dollar amount)
-5. **delinquency**: A list of delinquency categories, each containing:
-   - category: The delinquency status (e.g., "Current", "30-59 days delinquent", "60-89 days", "90+ days", "Foreclosure", "REO", "Bankruptcy") Note that if there are columns with the categories, only take data from the DELINQUENCY category. Do not sum across the rows.
-   - count: The number of loans in this category (integer)
-   - balance: The dollar balance for this category (number)
+STEP 1 - LOCATE THE DELINQUENCY TABLE:
+First, find the table with a header containing "DELINQUENCY", "DELINQUENT", or "DELINQUENT STATUS".
+This table contains the loan performance breakdown by payment status.
+ONLY extract delinquency data from this specific table - ignore other tables in the document.
 
-Return ONLY valid JSON in this exact format:
+STEP 2 - EXTRACT FROM THE DELINQUENCY TABLE:
+From that table, extract each row as a delinquency category. Common categories include:
+- Current (loans that are up to date)
+- 30-59 days delinquent
+- 60-89 days delinquent
+- 90-119 days delinquent
+- 120+ days delinquent (or 90+ days)
+- Foreclosure
+- REO (Real Estate Owned)
+- Bankruptcy
+
+For EACH category row in the table, extract:
+- category: The exact status name as shown in the table
+- count: Number of loans (integer)
+- balance: Dollar amount (number, no $ or commas)
+
+STEP 3 - EXTRACT POOL BALANCES:
+Look for the Beginning and Ending pool balances. These are typically found in:
+- Summary Table / Factor Information (first few pages)
+- Collateral Performance / Principal Reconciliation section
+- Grand Total row at bottom of Certificate/Bond Distribution tables
+
+Keywords for Beginning Balance: "Beginning Pool Balance", "Aggregate Beginning Balance", "Previous Period UPB", "Opening Balance"
+Keywords for Ending Balance: "Ending Pool Balance", "Aggregate Ending Principal Balance", "Current Period UPB", "Total Principal Balance"
+
+STEP 4 - EXTRACT METADATA:
+- series_name: Found in document header/title (e.g., "Series 2025-2", "GSAMP Trust 2006-S1")
+- report_date: The distribution/report date (format as MM/DD/YYYY)
+
+OUTPUT FORMAT - Return ONLY this JSON:
 {
   "series_name": "string or null",
   "report_date": "MM/DD/YYYY or null",
@@ -32,27 +57,29 @@ Return ONLY valid JSON in this exact format:
   "ending_balance": number or null,
   "delinquency": [
     {"category": "Current", "count": 450, "balance": 9500000.00},
-    {"category": "30-59 days", "count": 20, "balance": 250000.00}
+    {"category": "30-59 Days Delinquent", "count": 20, "balance": 250000.00},
+    {"category": "60-89 Days Delinquent", "count": 10, "balance": 120000.00},
+    {"category": "90+ Days Delinquent", "count": 5, "balance": 50000.00},
+    {"category": "Foreclosure", "count": 3, "balance": 30000.00},
+    {"category": "REO", "count": 2, "balance": 20000.00}
   ]
 }
 
-Important guidelines:
-- Extract ALL delinquency categories you can find in the document. 
-- For balances, remove any currency symbols, commas, and convert to numbers
-- For loan counts, extract only the integer value
-- If a value cannot be found, use null
-- Look carefully at tables for delinquency data - they often contain the breakdown
-- The beginning and ending balances are typically found in the pool summary section
-- Series name may appear in the header or title of the document
+CRITICAL RULES:
+- Extract EVERY row from the delinquency table - do not skip any categories
+- Match each count and balance to its correct category - read each row carefully
+- Use the exact category names as they appear in the table
+- Convert all dollar amounts to plain numbers (no $, no commas)
+- If a category has 0 loans, still include it with count: 0 and balance: 0
 
-Return ONLY the JSON object, no additional text or markdown formatting.
+Return ONLY the JSON object, no additional text or markdown.
 """
 
 
 class GeminiVisionExtractor:
     """Extract mortgage data from PDFs using Gemini Vision API."""
 
-    def __init__(self, api_key: str, model_name: str = "gemini-3-flash-preview"):
+    def __init__(self, api_key: str, model_name: str = "gemini-3-flash"):
         """
         Initialize the Gemini Vision extractor.
 
@@ -89,7 +116,7 @@ class GeminiVisionExtractor:
         response = self.model.generate_content(
             [EXTRACTION_PROMPT, uploaded_file],
             generation_config=genai.GenerationConfig(
-                temperature=0.1,
+                temperature=0,
                 max_output_tokens=4096,
             ),
         )

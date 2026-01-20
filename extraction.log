@@ -15,3 +15,42 @@
 2026-01-19 16:22:55,590 - ERROR - Extraction failed for 11.pdf: Extraction error: RetryError[<Future at 0x15a95d090 state=finished raised KeyError>]
 2026-01-19 16:22:55,618 - INFO - Approach 2 Complete: 0 successful, 3 failed
 2026-01-19 16:22:55,618 - INFO - Output saved to: /Users/anasputhawala/J2/dv01/mortgage-extraction/data/output/mortgage_data_approach2.xlsx
+2026-01-19 16:44:17,219 - INFO - Found 50 PDF files
+2026-01-19 16:44:17,220 - INFO - Limited to 5 files
+2026-01-19 16:44:17,220 - INFO - ============================================================
+2026-01-19 16:44:17,220 - INFO - APPROACH 1: Gemini Vision Direct Extraction
+2026-01-19 16:44:17,220 - INFO - ============================================================
+2026-01-19 16:45:00,463 - INFO - Approach 1 Complete: 5 successful, 0 failed
+2026-01-19 16:45:00,463 - INFO - Output saved to: /Users/anasputhawala/J2/dv01/mortgage-extraction/data/output/mortgage_data_approach1.xlsx
+2026-01-19 17:32:01,593 - INFO - Found 50 PDF files
+2026-01-19 17:32:01,593 - INFO - Limited to 5 files
+2026-01-19 17:32:01,593 - INFO - ============================================================
+2026-01-19 17:32:01,593 - INFO - APPROACH 2: PDF Text Parsing + Gemini Pro
+2026-01-19 17:32:01,593 - INFO - ============================================================
+2026-01-19 17:32:11,247 - ERROR - Extraction failed for 1.pdf: Extraction error: RetryError[<Future at 0x1634f5d90 state=finished raised KeyError>]
+2026-01-19 17:35:28,540 - INFO - Found 50 PDF files
+2026-01-19 17:35:28,541 - INFO - Limited to 5 files
+2026-01-19 17:35:28,541 - INFO - ============================================================
+2026-01-19 17:35:28,541 - INFO - APPROACH 2: PDF Text Parsing + Gemini Pro
+2026-01-19 17:35:28,541 - INFO - ============================================================
+2026-01-19 17:35:45,621 - INFO - Approach 2 Complete: 5 successful, 0 failed
+2026-01-19 17:35:45,621 - INFO - Output saved to: /Users/anasputhawala/J2/dv01/mortgage-extraction/data/output/mortgage_data_approach2.xlsx
+2026-01-19 18:23:35,872 - INFO - Found 50 PDF files
+2026-01-19 18:23:35,872 - INFO - Limited to 5 files
+2026-01-19 18:23:35,872 - INFO - ============================================================
+2026-01-19 18:23:35,872 - INFO - APPROACH 3: Hybrid Smart Extraction
+2026-01-19 18:23:35,872 - INFO - ============================================================
+2026-01-19 18:23:58,797 - INFO - Approach 3 Complete: 5 successful, 0 failed
+2026-01-19 18:23:58,797 - INFO - Method breakdown: 5 text-based, 0 vision-based
+2026-01-19 18:23:58,799 - INFO - Output saved to: /Users/anasputhawala/J2/dv01/mortgage-extraction/data/output/mortgage_data_approach3.xlsx
+2026-01-19 18:32:03,591 - INFO - Found 50 PDF files
+2026-01-19 18:32:03,591 - INFO - ============================================================
+2026-01-19 18:32:03,591 - INFO - APPROACH 3: Hybrid Smart Extraction
+2026-01-19 18:32:03,592 - INFO - ============================================================
+2026-01-19 18:35:16,275 - INFO - Found 50 PDF files
+2026-01-19 18:35:16,276 - INFO - ============================================================
+2026-01-19 18:35:16,276 - INFO - APPROACH 3: Hybrid Smart Extraction
+2026-01-19 18:35:16,276 - INFO - ============================================================
+2026-01-19 18:39:55,831 - INFO - Approach 3 Complete: 50 successful, 0 failed
+2026-01-19 18:39:55,832 - INFO - Method breakdown: 50 text-based, 0 vision-based
+2026-01-19 18:39:55,832 - INFO - Output saved to: /Users/anasputhawala/J2/dv01/mortgage-extraction/data/output/mortgage_data_approach3.xlsx

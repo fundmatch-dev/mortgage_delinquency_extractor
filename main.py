@@ -130,7 +130,7 @@ def run_approach_2(api_key: str, pdf_files: list[Path], output_suffix: str = "")
     logger.info("APPROACH 2: PDF Text Parsing + Gemini Pro")
     logger.info("=" * 60)
 
-    extractor = PDFTextExtractor(api_key=api_key, model_name="gemini-1.5-pro")
+    extractor = PDFTextExtractor(api_key=api_key, model_name="gemini-2.0-flash")
     validator = DataValidator()
     formatter = ExcelFormatter()
 
@@ -193,7 +193,7 @@ def run_approach_3(api_key: str, pdf_files: list[Path], output_suffix: str = "")
     logger.info("=" * 60)
 
     vision_extractor = GeminiVisionExtractor(api_key=api_key, model_name="gemini-2.0-flash-exp")
-    text_extractor = PDFTextExtractor(api_key=api_key, model_name="gemini-1.5-flash")
+    text_extractor = PDFTextExtractor(api_key=api_key, model_name="gemini-2.0-flash")
     validator = DataValidator()
     formatter = ExcelFormatter()
 

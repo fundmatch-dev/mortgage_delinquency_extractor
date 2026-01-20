@@ -15,50 +15,73 @@ import fitz  # pymupdf
 
 EXTRACTION_PROMPT = """You are an expert at extracting structured data from mortgage-backed securities trustee reports.
 
-Below is the text content extracted from a PDF document. Analyze it and extract the following information:
+Below is text extracted from a PDF. Your task is to locate specific sections and extract data accurately.
 
-1. **series_name**: The series identifier (e.g., "Series 2025-2", "GSAMP Trust 2006-S1", etc.)
-2. **report_date**: The date of this report (format as MM/DD/YYYY)
-3. **beginning_balance**: The total beginning balance of the loan pool (dollar amount)
-4. **ending_balance**: The total ending balance of the loan pool (dollar amount)
-5. **delinquency**: A list of delinquency categories, each containing:
-   - category: The delinquency status (e.g., "Current", "30-59 days delinquent", "60-89 days", "90+ days", "Foreclosure", "REO", "Bankruptcy")
-   - count: The number of loans in this category (integer)
-   - balance: The dollar balance for this category (number)
+STEP 1 - LOCATE THE DELINQUENCY TABLE:
+Find the section with "DELINQUENCY", "DELINQUENT", or "DELINQUENT STATUS" in the header.
+This table contains the loan performance breakdown. ONLY extract delinquency data from this section.
 
-Return ONLY valid JSON in this exact format:
-{
-  "series_name": "string or null",
-  "report_date": "MM/DD/YYYY or null",
-  "beginning_balance": number or null,
-  "ending_balance": number or null,
-  "delinquency": [
-    {"category": "Current", "count": 450, "balance": 9500000.00},
-    {"category": "30-59 days", "count": 20, "balance": 250000.00}
-  ]
-}
+STEP 2 - EXTRACT FROM THE DELINQUENCY TABLE:
+Common categories include:
+- Current (loans that are up to date)
+- 30-59 days delinquent
+- 60-89 days delinquent
+- 90-119 days delinquent
+- 120+ days delinquent (or 90+ days)
+- Foreclosure
+- REO (Real Estate Owned)
+- Bankruptcy
 
-Important guidelines:
-- Extract ALL delinquency categories you can find
-- For balances, parse numbers removing currency symbols and commas
-- For loan counts, extract only the integer value
-- If a value cannot be found, use null
-- Tables may appear as space-separated or tab-separated values
-- Look for patterns like "Current", "30-59", "60-89", "90+" in delinquency data
+For EACH category, extract:
+- category: The exact status name
+- count: Number of loans (integer)
+- balance: Dollar amount (number, no $ or commas)
+
+STEP 3 - EXTRACT POOL BALANCES:
+Look for Beginning and Ending pool balances in:
+- Summary Table / Factor Information
+- Collateral Performance / Principal Reconciliation section
+
+Keywords for Beginning Balance: "Beginning Pool Balance", "Aggregate Beginning Balance", "Previous Period UPB"
+Keywords for Ending Balance: "Ending Pool Balance", "Aggregate Ending Principal Balance", "Current Period UPB"
+
+STEP 4 - EXTRACT METADATA:
+- series_name: Found in document header/title (e.g., "Series 2025-2", "GSAMP Trust 2006-S1")
+- report_date: The distribution/report date (format as MM/DD/YYYY)
 
 DOCUMENT TEXT:
 ---
 {text}
 ---
 
-Return ONLY the JSON object, no additional text or markdown formatting.
+OUTPUT FORMAT - Return ONLY this JSON:
+{{
+  "series_name": "string or null",
+  "report_date": "MM/DD/YYYY or null",
+  "beginning_balance": number or null,
+  "ending_balance": number or null,
+  "delinquency": [
+    {{"category": "Current", "count": 450, "balance": 9500000.00}},
+    {{"category": "30-59 Days Delinquent", "count": 20, "balance": 250000.00}}
+  ]
+}}
+
+CRITICAL RULES:
+- Extract EVERY row from the delinquency table - do not skip any categories
+- Match each count and balance to its correct category
+- Convert all dollar amounts to plain numbers (no $, no commas)
+
+Return ONLY the JSON object, no additional text or markdown.
 """
 
 
 class PDFTextExtractor:
-    """Extract mortgage data using PDF text parsing + Gemini Pro."""
+    """Extract mortgage data using PDF text parsing + Gemini."""
 
-    def __init__(self, api_key: str, model_name: str = "gemini-1.5-pro"):
+    # Max characters to send to API (roughly 100k tokens limit, ~4 chars/token)
+    MAX_TEXT_LENGTH = 300000
+
+    def __init__(self, api_key: str, model_name: str = "gemini-3-flash"):
         """
         Initialize the PDF text extractor.
 
@@ -183,15 +206,26 @@ class PDFTextExtractor:
         """Make API call with retry logic."""
         self._rate_limit()
 
+        # Truncate text if too long
+        if len(text) > self.MAX_TEXT_LENGTH:
+            text = text[:self.MAX_TEXT_LENGTH] + "\n\n[TEXT TRUNCATED]"
+
         prompt = EXTRACTION_PROMPT.format(text=text)
 
         response = self.model.generate_content(
             prompt,
             generation_config=genai.GenerationConfig(
-                temperature=0.1,
+                temperature=0,
                 max_output_tokens=4096,
             ),
         )
+
+        # Handle potential response issues
+        if not response.candidates:
+            raise ValueError("No response candidates returned from API")
+
+        if response.candidates[0].finish_reason.name == "SAFETY":
+            raise ValueError("Response blocked by safety filters")
 
         return response.text
 

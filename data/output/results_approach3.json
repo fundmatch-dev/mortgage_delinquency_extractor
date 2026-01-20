@@ -1,0 +1,4156 @@
+[
+  {
+    "filename": "1.pdf",
+    "success": true,
+    "data": {
+      "series_name": "Series 2023-HQA1",
+      "report_date": "10/25/2024",
+      "beginning_balance": 12348291193.21,
+      "ending_balance": 12285993470.48,
+      "delinquency": [
+        {
+          "category": "30 Day",
+          "count": 300,
+          "balance": 96499611
+        },
+        {
+          "category": "60 Day",
+          "count": 81,
+          "balance": 25953626
+        },
+        {
+          "category": "90 Day",
+          "count": 44,
+          "balance": 14329346
+        },
+        {
+          "category": "120 Day",
+          "count": 30,
+          "balance": 10678117
+        },
+        {
+          "category": "150 Day",
+          "count": 20,
+          "balance": 6648020
+        },
+        {
+          "category": "180+ Day",
+          "count": 52,
+          "balance": 19090167
+        },
+        {
+          "category": "Bankruptcy",
+          "count": 62,
+          "balance": 19417239
+        },
+        {
+          "category": "Foreclosure",
+          "count": 17,
+          "balance": 4720083
+        },
+        {
+          "category": "REO",
+          "count": 0,
+          "balance": 0
+        }
+      ],
+      "filename": "1.pdf"
+    },
+    "error": null,
+    "processing_time": 3.5314130783081055,
+    "approach": "pdf_text_gemini",
+    "text_extraction_metadata": {
+      "pages": 29,
+      "tables_found": 31,
+      "method": "pdfplumber"
+    },
+    "hybrid_method": "text",
+    "validation": {
+      "has_errors": false,
+      "has_warnings": true,
+      "errors": [],
+      "warnings": [
+        "Balance sum mismatch: 98.4% difference"
+      ],
+      "checks_passed": [
+        "CATEGORY COUNT CHECK PASSED: Found 9 categories (minimum: 2)"
+      ],
+      "checks_failed": [
+        "BALANCE SUM CHECK FAILED: Delinquency sum ($197,336,209.00) differs by 98.4% from ending balance ($12,285,993,470.48)"
+      ],
+      "confidence_score": 70
+    }
+  },
+  {
+    "filename": "10.pdf",
+    "success": true,
+    "data": {
+      "series_name": "Series 2023-HQA1",
+      "report_date": "06/25/2024",
+      "beginning_balance": 12650689171.37,
+      "ending_balance": 12568571604.18,
+      "delinquency": [
+        {
+          "category": "< 30",
+          "count": 34,
+          "balance": 11878039.49
+        },
+        {
+          "category": "30-59",
+          "count": 218,
+          "balance": 73792961.91
+        },
+        {
+          "category": "60-89",
+          "count": 72,
+          "balance": 22907408.5
+        },
+        {
+          "category": "90-119",
+          "count": 33,
+          "balance": 11377885.69
+        },
+        {
+          "category": "120-149",
+          "count": 27,
+          "balance": 9784968.39
+        },
+        {
+          "category": "150-179",
+          "count": 16,
+          "balance": 6340430.57
+        },
+        {
+          "category": "180+",
+          "count": 51,
+          "balance": 19110566.55
+        }
+      ],
+      "filename": "10.pdf"
+    },
+    "error": null,
+    "processing_time": 3.3316168785095215,
+    "approach": "pdf_text_gemini",
+    "text_extraction_metadata": {
+      "pages": 28,
+      "tables_found": 47,
+      "method": "pdfplumber"
+    },
+    "hybrid_method": "text",
+    "validation": {
+      "has_errors": false,
+      "has_warnings": true,
+      "errors": [],
+      "warnings": [
+        "Balance sum mismatch: 98.8% difference"
+      ],
+      "checks_passed": [
+        "CATEGORY COUNT CHECK PASSED: Found 7 categories (minimum: 2)"
+      ],
+      "checks_failed": [
+        "BALANCE SUM CHECK FAILED: Delinquency sum ($155,192,261.10) differs by 98.8% from ending balance ($12,568,571,604.18)"
+      ],
+      "confidence_score": 70
+    }
+  },
+  {
+    "filename": "11.pdf",
+    "success": true,
+    "data": {
+      "series_name": "Series 2023-HQA1",
+      "report_date": "03/25/2024",
+      "beginning_balance": 12846984798.71,
+      "ending_balance": 12788454529.13,
+      "delinquency": [
+        {
+          "category": "< 30",
+          "count": 19,
+          "balance": 6834863.55
+        },
+        {
+          "category": "30-59",
+          "count": 274,
+          "balance": 92266656.04
+        },
+        {
+          "category": "60-89",
+          "count": 61,
+          "balance": 20947068.31
+        },
+        {
+          "category": "90-119",
+          "count": 26,
+          "balance": 8580379.17
+        },
+        {
+          "category": "120-149",
+          "count": 31,
+          "balance": 11646011.23
+        },
+        {
+          "category": "150-179",
+          "count": 22,
+          "balance": 7300016.48
+        },
+        {
+          "category": "180+",
+          "count": 45,
+          "balance": 18727512.39
+        }
+      ],
+      "filename": "11.pdf"
+    },
+    "error": null,
+    "processing_time": 3.1454219818115234,
+    "approach": "pdf_text_gemini",
+    "text_extraction_metadata": {
+      "pages": 26,
+      "tables_found": 46,
+      "method": "pdfplumber"
+    },
+    "hybrid_method": "text",
+    "validation": {
+      "has_errors": false,
+      "has_warnings": true,
+      "errors": [],
+      "warnings": [
+        "Balance sum mismatch: 98.7% difference"
+      ],
+      "checks_passed": [
+        "CATEGORY COUNT CHECK PASSED: Found 7 categories (minimum: 2)"
+      ],
+      "checks_failed": [
+        "BALANCE SUM CHECK FAILED: Delinquency sum ($166,302,507.17) differs by 98.7% from ending balance ($12,788,454,529.13)"
+      ],
+      "confidence_score": 70
+    }
+  },
+  {
+    "filename": "12.pdf",
+    "success": true,
+    "data": {
+      "series_name": "Series 2016-C05",
+      "report_date": "07/25/2017",
+      "beginning_balance": 34151969661.71,
+      "ending_balance": 33784522948.84,
+      "delinquency": [
+        {
+          "category": "30 Days",
+          "count": 944,
+          "balance": 198203602.58
+        },
+        {
+          "category": "60 Days",
+          "count": 162,
+          "balance": 33466307.49
+        },
+        {
+          "category": "90 Days",
+          "count": 67,
+          "balance": 14180715.48
+        },
+        {
+          "category": "120 Days",
+          "count": 56,
+          "balance": 12265481.17
+        },
+        {
+          "category": "150 Days",
+          "count": 30,
+          "balance": 8146746.4
+        },
+        {
+          "category": "180+ Days",
+          "count": 100,
+          "balance": 21674216.1
+        }
+      ],
+      "filename": "12.pdf"
+    },
+    "error": null,
+    "processing_time": 3.3788669109344482,
+    "approach": "pdf_text_gemini",
+    "text_extraction_metadata": {
+      "pages": 20,
+      "tables_found": 57,
+      "method": "pdfplumber"
+    },
+    "hybrid_method": "text",
+    "validation": {
+      "has_errors": false,
+      "has_warnings": true,
+      "errors": [],
+      "warnings": [
+        "Balance sum mismatch: 99.1% difference"
+      ],
+      "checks_passed": [
+        "CATEGORY COUNT CHECK PASSED: Found 6 categories (minimum: 2)"
+      ],
+      "checks_failed": [
+        "BALANCE SUM CHECK FAILED: Delinquency sum ($287,937,069.22) differs by 99.1% from ending balance ($33,784,522,948.84)"
+      ],
+      "confidence_score": 70
+    }
+  },
+  {
+    "filename": "13.pdf",
+    "success": true,
+    "data": {
+      "series_name": "Series 2017-HL2",
+      "report_date": "03/25/2024",
+      "beginning_balance": 371460713.33,
+      "ending_balance": 370440691.72,
+      "delinquency": [
+        {
+          "category": "0-29 Days",
+          "count": 0,
+          "balance": 0.0
+        },
+        {
+          "category": "30 Days",
+          "count": 3,
+          "balance": 1827593.7
+        },
+        {
+          "category": "60 Days",
+          "count": 0,
+          "balance": 0.0
+        },
+        {
+          "category": "90 Days",
+          "count": 0,
+          "balance": 0.0
+        },
+        {
+          "category": "120 Days",
+          "count": 0,
+          "balance": 0.0
+        },
+        {
+          "category": "150 Days",
+          "count": 0,
+          "balance": 0.0
+        },
+        {
+          "category": "180+ Days",
+          "count": 0,
+          "balance": 0.0
+        }
+      ],
+      "filename": "13.pdf"
+    },
+    "error": null,
+    "processing_time": 3.1855380535125732,
+    "approach": "pdf_text_gemini",
+    "text_extraction_metadata": {
+      "pages": 28,
+      "tables_found": 56,
+      "method": "pdfplumber"
+    },
+    "hybrid_method": "text",
+    "validation": {
+      "has_errors": false,
+      "has_warnings": true,
+      "errors": [],
+      "warnings": [
+        "Balance sum mismatch: 99.5% difference"
+      ],
+      "checks_passed": [
+        "CATEGORY COUNT CHECK PASSED: Found 7 categories (minimum: 2)"
+      ],
+      "checks_failed": [
+        "BALANCE SUM CHECK FAILED: Delinquency sum ($1,827,593.70) differs by 99.5% from ending balance ($370,440,691.72)"
+      ],
+      "confidence_score": 70
+    }
+  },
+  {
+    "filename": "14.pdf",
+    "success": true,
+    "data": {
+      "series_name": "Series 2017-HL2",
+      "report_date": "01/25/2024",
+      "beginning_balance": 373708152.58,
+      "ending_balance": 372489728.0,
+      "delinquency": [
+        {
+          "category": "30 Days",
+          "count": 3,
+          "balance": 1732181.99
+        },
+        {
+          "category": "60 Days",
+          "count": 0,
+          "balance": 0.0
+        },
+        {
+          "category": "90 Days",
+          "count": 0,
+          "balance": 0.0
+        },
+        {
+          "category": "120 Days",
+          "count": 0,
+          "balance": 0.0
+        },
+        {
+          "category": "150 Days",
+          "count": 0,
+          "balance": 0.0
+        },
+        {
+          "category": "180+ Days",
+          "count": 0,
+          "balance": 0.0
+        },
+        {
+          "category": "0-29 Days",
+          "count": 0,
+          "balance": 0.0
+        },
+        {
+          "category": "30 Days",
+          "count": 0,
+          "balance": 0.0
+        },
+        {
+          "category": "60 Days",
+          "count": 0,
+          "balance": 0.0
+        },
+        {
+          "category": "90 Days",
+          "count": 0,
+          "balance": 0.0
+        },
+        {
+          "category": "120 Days",
+          "count": 0,
+          "balance": 0.0
+        },
+        {
+          "category": "150 Days",
+          "count": 0,
+          "balance": 0.0
+        },
+        {
+          "category": "180+ Days",
+          "count": 0,
+          "balance": 0.0
+        },
+        {
+          "category": "0-29 Days",
+          "count": 0,
+          "balance": 0.0
+        },
+        {
+          "category": "30 Days",
+          "count": 0,
+          "balance": 0.0
+        },
+        {
+          "category": "60 Days",
+          "count": 0,
+          "balance": 0.0
+        },
+        {
+          "category": "90 Days",
+          "count": 0,
+          "balance": 0.0
+        },
+        {
+          "category": "120 Days",
+          "count": 0,
+          "balance": 0.0
+        },
+        {
+          "category": "150 Days",
+          "count": 0,
+          "balance": 0.0
+        },
+        {
+          "category": "180+ Days",
+          "count": 0,
+          "balance": 0.0
+        },
+        {
+          "category": "0-29 Days",
+          "count": 0,
+          "balance": 0.0
+        },
+        {
+          "category": "30 Days",
+          "count": 0,
+          "balance": 0.0
+        },
+        {
+          "category": "60 Days",
+          "count": 0,
+          "balance": 0.0
+        },
+        {
+          "category": "90 Days",
+          "count": 0,
+          "balance": 0.0
+        },
+        {
+          "category": "120 Days",
+          "count": 0,
+          "balance": 0.0
+        },
+        {
+          "category": "150 Days",
+          "count": 0,
+          "balance": 0.0
+        },
+        {
+          "category": "180+ Days",
+          "count": 0,
+          "balance": 0.0
+        },
+        {
+          "category": "0-29 Days",
+          "count": 0,
+          "balance": 0.0
+        },
+        {
+          "category": "30 Days",
+          "count": 3,
+          "balance": 1732181.99
+        },
+        {
+          "category": "60 Days",
+          "count": 0,
+          "balance": 0.0
+        },
+        {
+          "category": "90 Days",
+          "count": 0,
+          "balance": 0.0
+        },
+        {
+          "category": "120 Days",
+          "count": 0,
+          "balance": 0.0
+        },
+        {
+          "category": "150 Days",
+          "count": 0,
+          "balance": 0.0
+        },
+        {
+          "category": "180+ Days",
+          "count": 0,
+          "balance": 0.0
+        }
+      ],
+      "filename": "14.pdf"
+    },
+    "error": null,
+    "processing_time": 5.965913772583008,
+    "approach": "pdf_text_gemini",
+    "text_extraction_metadata": {
+      "pages": 28,
+      "tables_found": 56,
+      "method": "pdfplumber"
+    },
+    "hybrid_method": "text",
+    "validation": {
+      "has_errors": false,
+      "has_warnings": true,
+      "errors": [],
+      "warnings": [
+        "Balance sum mismatch: 99.1% difference"
+      ],
+      "checks_passed": [
+        "CATEGORY COUNT CHECK PASSED: Found 34 categories (minimum: 2)"
+      ],
+      "checks_failed": [
+        "BALANCE SUM CHECK FAILED: Delinquency sum ($3,464,363.98) differs by 99.1% from ending balance ($372,489,728.00)"
+      ],
+      "confidence_score": 70
+    }
+  },
+  {
+    "filename": "15.pdf",
+    "success": true,
+    "data": {
+      "series_name": "Series 2023-HQA1",
+      "report_date": "05/28/2024",
+      "beginning_balance": 12717775058.4,
+      "ending_balance": 12651537818.77,
+      "delinquency": [
+        {
+          "category": "< 30",
+          "count": 29,
+          "balance": 10624875.92
+        },
+        {
+          "category": "30-59",
+          "count": 229,
+          "balance": 75067426.95
+        },
+        {
+          "category": "60-89",
+          "count": 67,
+          "balance": 21194613.6
+        },
+        {
+          "category": "90-119",
+          "count": 33,
+          "balance": 11428663.09
+        },
+        {
+          "category": "120-149",
+          "count": 18,
+          "balance": 6051752.99
+        },
+        {
+          "category": "150-179",
+          "count": 19,
+          "balance": 7783175.57
+        },
+        {
+          "category": "180+",
+          "count": 60,
+          "balance": 23836432.91
+        }
+      ],
+      "filename": "15.pdf"
+    },
+    "error": null,
+    "processing_time": 3.3785409927368164,
+    "approach": "pdf_text_gemini",
+    "text_extraction_metadata": {
+      "pages": 27,
+      "tables_found": 47,
+      "method": "pdfplumber"
+    },
+    "hybrid_method": "text",
+    "validation": {
+      "has_errors": false,
+      "has_warnings": true,
+      "errors": [],
+      "warnings": [
+        "Balance sum mismatch: 98.8% difference"
+      ],
+      "checks_passed": [
+        "CATEGORY COUNT CHECK PASSED: Found 7 categories (minimum: 2)"
+      ],
+      "checks_failed": [
+        "BALANCE SUM CHECK FAILED: Delinquency sum ($155,986,941.03) differs by 98.8% from ending balance ($12,651,537,818.77)"
+      ],
+      "confidence_score": 70
+    }
+  },
+  {
+    "filename": "16.pdf",
+    "success": true,
+    "data": {
+      "series_name": "Series 2015-DNA1 January 2024",
+      "report_date": "01/25/2024",
+      "beginning_balance": 6668674013.0,
+      "ending_balance": 6622074277.92,
+      "delinquency": [
+        {
+          "category": "Current",
+          "count": 41995,
+          "balance": 6556396959.41
+        },
+        {
+          "category": "30 - 59 days",
+          "count": 241,
+          "balance": 38129789.53
+        },
+        {
+          "category": "60 - 89 days",
+          "count": 28,
+          "balance": 4917608.48
+        },
+        {
+          "category": "90 - 119 days",
+          "count": 20,
+          "balance": 3729559.66
+        },
+        {
+          "category": "120 - 179 days",
+          "count": 26,
+          "balance": 3792371.34
+        },
+        {
+          "category": "180 - 269 days",
+          "count": 10,
+          "balance": 1589514.65
+        },
+        {
+          "category": "270 - 359 days",
+          "count": 5,
+          "balance": 1199109.57
+        },
+        {
+          "category": "360 - 539 days",
+          "count": 5,
+          "balance": 670911.69
+        },
+        {
+          "category": "540 + days",
+          "count": 5,
+          "balance": 971326.94
+        },
+        {
+          "category": "Total",
+          "count": 42335,
+          "balance": 6611397151.27
+        }
+      ],
+      "filename": "16.pdf"
+    },
+    "error": null,
+    "processing_time": 6.5962419509887695,
+    "approach": "pdf_text_gemini",
+    "text_extraction_metadata": {
+      "pages": 42,
+      "tables_found": 63,
+      "method": "pdfplumber"
+    },
+    "hybrid_method": "text",
+    "validation": {
+      "has_errors": false,
+      "has_warnings": true,
+      "errors": [],
+      "warnings": [
+        "Delinquency total (13,222,794,302.54) exceeds ending balance",
+        "Balance sum mismatch: 99.7% difference"
+      ],
+      "checks_passed": [
+        "CATEGORY COUNT CHECK PASSED: Found 10 categories (minimum: 2)"
+      ],
+      "checks_failed": [
+        "BALANCE SUM CHECK FAILED: Delinquency sum ($13,222,794,302.54) differs by 99.7% from ending balance ($6,622,074,277.92)"
+      ],
+      "confidence_score": 60
+    }
+  },
+  {
+    "filename": "17.pdf",
+    "success": true,
+    "data": {
+      "series_name": "Series 2016-C05",
+      "report_date": "09/25/2017",
+      "beginning_balance": 33355641966.23,
+      "ending_balance": 32963473474.72,
+      "delinquency": [
+        {
+          "category": "30 Days",
+          "count": 1060,
+          "balance": 236501823.89
+        },
+        {
+          "category": "60 Days",
+          "count": 170,
+          "balance": 39731085.45
+        },
+        {
+          "category": "90 Days",
+          "count": 68,
+          "balance": 14935652.43
+        },
+        {
+          "category": "120 Days",
+          "count": 57,
+          "balance": 11790346.87
+        },
+        {
+          "category": "150 Days",
+          "count": 43,
+          "balance": 9052077.87
+        },
+        {
+          "category": "180+ Days",
+          "count": 120,
+          "balance": 27104180.93
+        }
+      ],
+      "filename": "17.pdf"
+    },
+    "error": null,
+    "processing_time": 3.242725133895874,
+    "approach": "pdf_text_gemini",
+    "text_extraction_metadata": {
+      "pages": 21,
+      "tables_found": 59,
+      "method": "pdfplumber"
+    },
+    "hybrid_method": "text",
+    "validation": {
+      "has_errors": false,
+      "has_warnings": true,
+      "errors": [],
+      "warnings": [
+        "Balance sum mismatch: 99.0% difference"
+      ],
+      "checks_passed": [
+        "CATEGORY COUNT CHECK PASSED: Found 6 categories (minimum: 2)"
+      ],
+      "checks_failed": [
+        "BALANCE SUM CHECK FAILED: Delinquency sum ($339,115,167.44) differs by 99.0% from ending balance ($32,963,473,474.72)"
+      ],
+      "confidence_score": 70
+    }
+  },
+  {
+    "filename": "18.pdf",
+    "success": true,
+    "data": {
+      "series_name": "Series 2015-DNA1",
+      "report_date": "02/26/2024",
+      "beginning_balance": 6622074277.92,
+      "ending_balance": 6575653777.09,
+      "delinquency": [
+        {
+          "category": "Current",
+          "count": 41902,
+          "balance": 6523075306.9
+        },
+        {
+          "category": "30 - 59 days",
+          "count": 175,
+          "balance": 25715170.37
+        },
+        {
+          "category": "60 - 89 days",
+          "count": 45,
+          "balance": 6894972.94
+        },
+        {
+          "category": "90 - 119 days",
+          "count": 13,
+          "balance": 2422646.93
+        },
+        {
+          "category": "120 - 179 days",
+          "count": 21,
+          "balance": 3288554.54
+        },
+        {
+          "category": "180 - 269 days",
+          "count": 14,
+          "balance": 2239599.33
+        },
+        {
+          "category": "270 - 359 days",
+          "count": 3,
+          "balance": 770377.46
+        },
+        {
+          "category": "360 - 539 days",
+          "count": 2,
+          "balance": 298940.74
+        },
+        {
+          "category": "540 + days",
+          "count": 5,
+          "balance": 1065120.93
+        }
+      ],
+      "filename": "18.pdf"
+    },
+    "error": null,
+    "processing_time": 6.4759180545806885,
+    "approach": "pdf_text_gemini",
+    "text_extraction_metadata": {
+      "pages": 42,
+      "tables_found": 63,
+      "method": "pdfplumber"
+    },
+    "hybrid_method": "text",
+    "validation": {
+      "has_errors": false,
+      "has_warnings": false,
+      "errors": [],
+      "warnings": [],
+      "checks_passed": [
+        "BALANCE SUM CHECK PASSED: Delinquency sum ($6,565,770,690.14) is within 10% of ending balance ($6,575,653,777.09)",
+        "CATEGORY COUNT CHECK PASSED: Found 9 categories (minimum: 2)"
+      ],
+      "checks_failed": [],
+      "confidence_score": 100
+    }
+  },
+  {
+    "filename": "19.pdf",
+    "success": true,
+    "data": {
+      "series_name": "Series 2015-DNA1",
+      "report_date": "03/25/2024",
+      "beginning_balance": 6575653777.09,
+      "ending_balance": 6533346719.77,
+      "delinquency": [
+        {
+          "category": "Current",
+          "count": 41771,
+          "balance": 6478282497.64
+        },
+        {
+          "category": "30 - 59 days",
+          "count": 211,
+          "balance": 33241557.86
+        },
+        {
+          "category": "60 - 89 days",
+          "count": 36,
+          "balance": 6107460.71
+        },
+        {
+          "category": "90 - 119 days",
+          "count": 22,
+          "balance": 3327782.3
+        },
+        {
+          "category": "120 - 179 days",
+          "count": 18,
+          "balance": 3331449.37
+        },
+        {
+          "category": "180 - 269 days",
+          "count": 31,
+          "balance": 4172214.24
+        },
+        {
+          "category": "270 - 359 days",
+          "count": 6,
+          "balance": 1254020.96
+        },
+        {
+          "category": "360 - 539 days",
+          "count": 10,
+          "balance": 1617449.59
+        },
+        {
+          "category": "540 + days",
+          "count": 15,
+          "balance": 2012287.1
+        }
+      ],
+      "filename": "19.pdf"
+    },
+    "error": null,
+    "processing_time": 6.4337990283966064,
+    "approach": "pdf_text_gemini",
+    "text_extraction_metadata": {
+      "pages": 42,
+      "tables_found": 63,
+      "method": "pdfplumber"
+    },
+    "hybrid_method": "text",
+    "validation": {
+      "has_errors": false,
+      "has_warnings": false,
+      "errors": [],
+      "warnings": [],
+      "checks_passed": [
+        "BALANCE SUM CHECK PASSED: Delinquency sum ($6,533,346,719.77) is within 10% of ending balance ($6,533,346,719.77)",
+        "CATEGORY COUNT CHECK PASSED: Found 9 categories (minimum: 2)"
+      ],
+      "checks_failed": [],
+      "confidence_score": 100
+    }
+  },
+  {
+    "filename": "2.pdf",
+    "success": true,
+    "data": {
+      "series_name": "Series 2016-C05",
+      "report_date": "04/25/2017",
+      "beginning_balance": 34987060629.82,
+      "ending_balance": 34744046664.36,
+      "delinquency": [
+        {
+          "category": "30 Days",
+          "count": 1040,
+          "balance": 229041025.6
+        },
+        {
+          "category": "60 Days",
+          "count": 149,
+          "balance": 34333605.0
+        },
+        {
+          "category": "90 Days",
+          "count": 60,
+          "balance": 13504662.8
+        },
+        {
+          "category": "120 Days",
+          "count": 46,
+          "balance": 8977622.15
+        },
+        {
+          "category": "150 Days",
+          "count": 36,
+          "balance": 8072198.86
+        },
+        {
+          "category": "180+ Days",
+          "count": 59,
+          "balance": 12968547.9
+        }
+      ],
+      "filename": "2.pdf"
+    },
+    "error": null,
+    "processing_time": 3.388706922531128,
+    "approach": "pdf_text_gemini",
+    "text_extraction_metadata": {
+      "pages": 20,
+      "tables_found": 58,
+      "method": "pdfplumber"
+    },
+    "hybrid_method": "text",
+    "validation": {
+      "has_errors": false,
+      "has_warnings": true,
+      "errors": [],
+      "warnings": [
+        "Balance sum mismatch: 99.1% difference"
+      ],
+      "checks_passed": [
+        "CATEGORY COUNT CHECK PASSED: Found 6 categories (minimum: 2)"
+      ],
+      "checks_failed": [
+        "BALANCE SUM CHECK FAILED: Delinquency sum ($306,897,662.31) differs by 99.1% from ending balance ($34,744,046,664.36)"
+      ],
+      "confidence_score": 70
+    }
+  },
+  {
+    "filename": "20.pdf",
+    "success": true,
+    "data": {
+      "series_name": "Series 2015-DNA1",
+      "report_date": "12/26/2023",
+      "beginning_balance": 6717881422.88,
+      "ending_balance": 6668674013.0,
+      "delinquency": [
+        {
+          "category": "Current",
+          "count": 42168,
+          "balance": 6608572415.8
+        },
+        {
+          "category": "30 - 59 days",
+          "count": 202,
+          "balance": 31552050.14
+        },
+        {
+          "category": "60 - 89 days",
+          "count": 45,
+          "balance": 7242578.53
+        },
+        {
+          "category": "90 - 119 days",
+          "count": 27,
+          "balance": 3260782.6
+        },
+        {
+          "category": "120 - 179 days",
+          "count": 22,
+          "balance": 3544500.11
+        },
+        {
+          "category": "180 - 269 days",
+          "count": 10,
+          "balance": 1871804.91
+        },
+        {
+          "category": "270 - 359 days",
+          "count": 7,
+          "balance": 1468731.2
+        },
+        {
+          "category": "360 - 539 days",
+          "count": 5,
+          "balance": 679008.02
+        },
+        {
+          "category": "540 + days",
+          "count": 3,
+          "balance": 584426.29
+        }
+      ],
+      "filename": "20.pdf"
+    },
+    "error": null,
+    "processing_time": 6.39435601234436,
+    "approach": "pdf_text_gemini",
+    "text_extraction_metadata": {
+      "pages": 42,
+      "tables_found": 63,
+      "method": "pdfplumber"
+    },
+    "hybrid_method": "text",
+    "validation": {
+      "has_errors": false,
+      "has_warnings": false,
+      "errors": [],
+      "warnings": [],
+      "checks_passed": [
+        "BALANCE SUM CHECK PASSED: Delinquency sum ($6,658,776,297.60) is within 10% of ending balance ($6,668,674,013.00)",
+        "CATEGORY COUNT CHECK PASSED: Found 9 categories (minimum: 2)"
+      ],
+      "checks_failed": [],
+      "confidence_score": 100
+    }
+  },
+  {
+    "filename": "21.pdf",
+    "success": true,
+    "data": {
+      "series_name": "Series 2023-HQA1",
+      "report_date": "07/25/2024",
+      "beginning_balance": 12568571604.18,
+      "ending_balance": 12494054258.14,
+      "delinquency": [
+        {
+          "category": "< 30",
+          "count": 35,
+          "balance": 12073300.4
+        },
+        {
+          "category": "30-59",
+          "count": 284,
+          "balance": 93870760.53
+        },
+        {
+          "category": "60-89",
+          "count": 75,
+          "balance": 24691704.23
+        },
+        {
+          "category": "90-119",
+          "count": 46,
+          "balance": 15101272.57
+        },
+        {
+          "category": "120-149",
+          "count": 21,
+          "balance": 7371932.08
+        },
+        {
+          "category": "150-179",
+          "count": 19,
+          "balance": 6919466.95
+        },
+        {
+          "category": "180+",
+          "count": 52,
+          "balance": 20026393.74
+        }
+      ],
+      "filename": "21.pdf"
+    },
+    "error": null,
+    "processing_time": 3.4279439449310303,
+    "approach": "pdf_text_gemini",
+    "text_extraction_metadata": {
+      "pages": 28,
+      "tables_found": 48,
+      "method": "pdfplumber"
+    },
+    "hybrid_method": "text",
+    "validation": {
+      "has_errors": false,
+      "has_warnings": true,
+      "errors": [],
+      "warnings": [
+        "Balance sum mismatch: 98.6% difference"
+      ],
+      "checks_passed": [
+        "CATEGORY COUNT CHECK PASSED: Found 7 categories (minimum: 2)"
+      ],
+      "checks_failed": [
+        "BALANCE SUM CHECK FAILED: Delinquency sum ($180,054,830.50) differs by 98.6% from ending balance ($12,494,054,258.14)"
+      ],
+      "confidence_score": 70
+    }
+  },
+  {
+    "filename": "22.pdf",
+    "success": true,
+    "data": {
+      "series_name": "Series 2023-HQA1",
+      "report_date": "08/26/2024",
+      "beginning_balance": 12495336236.03,
+      "ending_balance": 12417949407.95,
+      "delinquency": [
+        {
+          "category": "30 Day",
+          "count": 297,
+          "balance": 95896049
+        },
+        {
+          "category": "60 Day",
+          "count": 78,
+          "balance": 24632936
+        },
+        {
+          "category": "90 Day",
+          "count": 39,
+          "balance": 13635302
+        },
+        {
+          "category": "120 Day",
+          "count": 27,
+          "balance": 8402246
+        },
+        {
+          "category": "150 Day",
+          "count": 23,
+          "balance": 8002203
+        },
+        {
+          "category": "180+ Day",
+          "count": 52,
+          "balance": 20694823
+        },
+        {
+          "category": "Bankruptcy",
+          "count": 48,
+          "balance": 16102934
+        },
+        {
+          "category": "Foreclosure",
+          "count": 11,
+          "balance": 3621755
+        },
+        {
+          "category": "REO",
+          "count": 0,
+          "balance": 0
+        }
+      ],
+      "filename": "22.pdf"
+    },
+    "error": null,
+    "processing_time": 3.4007930755615234,
+    "approach": "pdf_text_gemini",
+    "text_extraction_metadata": {
+      "pages": 28,
+      "tables_found": 30,
+      "method": "pdfplumber"
+    },
+    "hybrid_method": "text",
+    "validation": {
+      "has_errors": false,
+      "has_warnings": true,
+      "errors": [],
+      "warnings": [
+        "Balance sum mismatch: 98.5% difference"
+      ],
+      "checks_passed": [
+        "CATEGORY COUNT CHECK PASSED: Found 9 categories (minimum: 2)"
+      ],
+      "checks_failed": [
+        "BALANCE SUM CHECK FAILED: Delinquency sum ($190,988,248.00) differs by 98.5% from ending balance ($12,417,949,407.95)"
+      ],
+      "confidence_score": 70
+    }
+  },
+  {
+    "filename": "23.pdf",
+    "success": true,
+    "data": {
+      "series_name": "Series 2023-HQA1",
+      "report_date": "04/25/2024",
+      "beginning_balance": 12788454529.13,
+      "ending_balance": 12717081238.32,
+      "delinquency": [
+        {
+          "category": "< 30",
+          "count": 22,
+          "balance": 7779019.07
+        },
+        {
+          "category": "30-59",
+          "count": 258,
+          "balance": 87844392.66
+        },
+        {
+          "category": "60-89",
+          "count": 61,
+          "balance": 20781670.11
+        },
+        {
+          "category": "90-119",
+          "count": 27,
+          "balance": 8291276.17
+        },
+        {
+          "category": "120-149",
+          "count": 25,
+          "balance": 9565622.39
+        },
+        {
+          "category": "150-179",
+          "count": 25,
+          "balance": 8938727.43
+        },
+        {
+          "category": "180+",
+          "count": 50,
+          "balance": 20652981.76
+        }
+      ],
+      "filename": "23.pdf"
+    },
+    "error": null,
+    "processing_time": 3.8554980754852295,
+    "approach": "pdf_text_gemini",
+    "text_extraction_metadata": {
+      "pages": 26,
+      "tables_found": 46,
+      "method": "pdfplumber"
+    },
+    "hybrid_method": "text",
+    "validation": {
+      "has_errors": false,
+      "has_warnings": true,
+      "errors": [],
+      "warnings": [
+        "Balance sum mismatch: 98.7% difference"
+      ],
+      "checks_passed": [
+        "CATEGORY COUNT CHECK PASSED: Found 7 categories (minimum: 2)"
+      ],
+      "checks_failed": [
+        "BALANCE SUM CHECK FAILED: Delinquency sum ($163,853,689.59) differs by 98.7% from ending balance ($12,717,081,238.32)"
+      ],
+      "confidence_score": 70
+    }
+  },
+  {
+    "filename": "24.pdf",
+    "success": true,
+    "data": {
+      "series_name": "Series 2023-HQA1",
+      "report_date": "02/26/2024",
+      "beginning_balance": 12902717663.74,
+      "ending_balance": 12847429003.98,
+      "delinquency": [
+        {
+          "category": "< 30",
+          "count": 20,
+          "balance": 6881169.82
+        },
+        {
+          "category": "30-59",
+          "count": 252,
+          "balance": 83069351.15
+        },
+        {
+          "category": "60-89",
+          "count": 66,
+          "balance": 21621681.21
+        },
+        {
+          "category": "90-119",
+          "count": 34,
+          "balance": 13008835.07
+        },
+        {
+          "category": "120-149",
+          "count": 24,
+          "balance": 8196572.21
+        },
+        {
+          "category": "150-179",
+          "count": 12,
+          "balance": 4097907.42
+        },
+        {
+          "category": "180+",
+          "count": 48,
+          "balance": 19616840.58
+        }
+      ],
+      "filename": "24.pdf"
+    },
+    "error": null,
+    "processing_time": 2.9286410808563232,
+    "approach": "pdf_text_gemini",
+    "text_extraction_metadata": {
+      "pages": 25,
+      "tables_found": 45,
+      "method": "pdfplumber"
+    },
+    "hybrid_method": "text",
+    "validation": {
+      "has_errors": false,
+      "has_warnings": true,
+      "errors": [],
+      "warnings": [
+        "Balance sum mismatch: 98.8% difference"
+      ],
+      "checks_passed": [
+        "CATEGORY COUNT CHECK PASSED: Found 7 categories (minimum: 2)"
+      ],
+      "checks_failed": [
+        "BALANCE SUM CHECK FAILED: Delinquency sum ($156,492,357.46) differs by 98.8% from ending balance ($12,847,429,003.98)"
+      ],
+      "confidence_score": 70
+    }
+  },
+  {
+    "filename": "25.pdf",
+    "success": true,
+    "data": {
+      "series_name": "Series 2017-HL2",
+      "report_date": "07/25/2024",
+      "beginning_balance": 366422390.38,
+      "ending_balance": 365453358.9,
+      "delinquency": [
+        {
+          "category": "30 Days",
+          "count": 1,
+          "balance": 751009.38
+        },
+        {
+          "category": "60 Days",
+          "count": 1,
+          "balance": 601534.54
+        },
+        {
+          "category": "90 Days",
+          "count": 0,
+          "balance": 0.0
+        },
+        {
+          "category": "120 Days",
+          "count": 1,
+          "balance": 463202.12
+        },
+        {
+          "category": "150 Days",
+          "count": 0,
+          "balance": 0.0
+        },
+        {
+          "category": "180+ Days",
+          "count": 0,
+          "balance": 0.0
+        }
+      ],
+      "filename": "25.pdf"
+    },
+    "error": null,
+    "processing_time": 3.1103312969207764,
+    "approach": "pdf_text_gemini",
+    "text_extraction_metadata": {
+      "pages": 28,
+      "tables_found": 55,
+      "method": "pdfplumber"
+    },
+    "hybrid_method": "text",
+    "validation": {
+      "has_errors": false,
+      "has_warnings": true,
+      "errors": [],
+      "warnings": [
+        "Balance sum mismatch: 99.5% difference"
+      ],
+      "checks_passed": [
+        "CATEGORY COUNT CHECK PASSED: Found 6 categories (minimum: 2)"
+      ],
+      "checks_failed": [
+        "BALANCE SUM CHECK FAILED: Delinquency sum ($1,815,746.04) differs by 99.5% from ending balance ($365,453,358.90)"
+      ],
+      "confidence_score": 70
+    }
+  },
+  {
+    "filename": "26.pdf",
+    "success": true,
+    "data": {
+      "series_name": "Series 2016-C05",
+      "report_date": "05/25/2017",
+      "beginning_balance": 34744046664.36,
+      "ending_balance": 34440007363.72,
+      "delinquency": [
+        {
+          "category": "30 Days",
+          "count": 640,
+          "balance": 140419593.67
+        },
+        {
+          "category": "60 Days",
+          "count": 121,
+          "balance": 26408204.52
+        },
+        {
+          "category": "90 Days",
+          "count": 60,
+          "balance": 13447792.87
+        },
+        {
+          "category": "120 Days",
+          "count": 39,
+          "balance": 9607015.91
+        },
+        {
+          "category": "150 Days",
+          "count": 45,
+          "balance": 8916751.17
+        },
+        {
+          "category": "180+ Days",
+          "count": 70,
+          "balance": 15232624.62
+        }
+      ],
+      "filename": "26.pdf"
+    },
+    "error": null,
+    "processing_time": 3.3011720180511475,
+    "approach": "pdf_text_gemini",
+    "text_extraction_metadata": {
+      "pages": 20,
+      "tables_found": 58,
+      "method": "pdfplumber"
+    },
+    "hybrid_method": "text",
+    "validation": {
+      "has_errors": false,
+      "has_warnings": true,
+      "errors": [],
+      "warnings": [
+        "Balance sum mismatch: 99.4% difference"
+      ],
+      "checks_passed": [
+        "CATEGORY COUNT CHECK PASSED: Found 6 categories (minimum: 2)"
+      ],
+      "checks_failed": [
+        "BALANCE SUM CHECK FAILED: Delinquency sum ($214,031,982.76) differs by 99.4% from ending balance ($34,440,007,363.72)"
+      ],
+      "confidence_score": 70
+    }
+  },
+  {
+    "filename": "27.pdf",
+    "success": true,
+    "data": {
+      "series_name": "Series 2015-DNA1",
+      "report_date": "10/25/2023",
+      "beginning_balance": 6822466345.63,
+      "ending_balance": 6768656432.76,
+      "delinquency": [
+        {
+          "category": "Current",
+          "count": 42540,
+          "balance": 6709605552.78
+        },
+        {
+          "category": "30 - 59 days",
+          "count": 205,
+          "balance": 31438417.9
+        },
+        {
+          "category": "60 - 89 days",
+          "count": 42,
+          "balance": 6689804.41
+        },
+        {
+          "category": "90 - 119 days",
+          "count": 22,
+          "balance": 3044402.4
+        },
+        {
+          "category": "120 - 179 days",
+          "count": 18,
+          "balance": 3135540.3
+        },
+        {
+          "category": "180 - 269 days",
+          "count": 11,
+          "balance": 2144981.67
+        },
+        {
+          "category": "270 - 359 days",
+          "count": 5,
+          "balance": 675516.22
+        },
+        {
+          "category": "360 - 539 days",
+          "count": 3,
+          "balance": 504574.96
+        },
+        {
+          "category": "540 + days",
+          "count": 4,
+          "balance": 566321.98
+        }
+      ],
+      "filename": "27.pdf"
+    },
+    "error": null,
+    "processing_time": 6.2393248081207275,
+    "approach": "pdf_text_gemini",
+    "text_extraction_metadata": {
+      "pages": 42,
+      "tables_found": 63,
+      "method": "pdfplumber"
+    },
+    "hybrid_method": "text",
+    "validation": {
+      "has_errors": false,
+      "has_warnings": false,
+      "errors": [],
+      "warnings": [],
+      "checks_passed": [
+        "BALANCE SUM CHECK PASSED: Delinquency sum ($6,757,805,112.62) is within 10% of ending balance ($6,768,656,432.76)",
+        "CATEGORY COUNT CHECK PASSED: Found 9 categories (minimum: 2)"
+      ],
+      "checks_failed": [],
+      "confidence_score": 100
+    }
+  },
+  {
+    "filename": "28.pdf",
+    "success": true,
+    "data": {
+      "series_name": "Series 2015-DNA1",
+      "report_date": "08/25/2023",
+      "beginning_balance": 6938391960.42,
+      "ending_balance": 6879673836.14,
+      "delinquency": [
+        {
+          "category": "Current",
+          "count": 42973,
+          "balance": 6826757060.39
+        },
+        {
+          "category": "30 - 59 days",
+          "count": 160,
+          "balance": 25027229.98
+        },
+        {
+          "category": "60 - 89 days",
+          "count": 42,
+          "balance": 6053278.5
+        },
+        {
+          "category": "90 - 119 days",
+          "count": 18,
+          "balance": 2836231.46
+        },
+        {
+          "category": "120 - 179 days",
+          "count": 18,
+          "balance": 3259346.24
+        },
+        {
+          "category": "180 - 269 days",
+          "count": 13,
+          "balance": 1783798.75
+        },
+        {
+          "category": "270 - 359 days",
+          "count": 8,
+          "balance": 939180.5
+        },
+        {
+          "category": "360 - 539 days",
+          "count": 6,
+          "balance": 862201.49
+        },
+        {
+          "category": "540 + days",
+          "count": 5,
+          "balance": 735675.08
+        }
+      ],
+      "filename": "28.pdf"
+    },
+    "error": null,
+    "processing_time": 6.186382055282593,
+    "approach": "pdf_text_gemini",
+    "text_extraction_metadata": {
+      "pages": 42,
+      "tables_found": 63,
+      "method": "pdfplumber"
+    },
+    "hybrid_method": "text",
+    "validation": {
+      "has_errors": false,
+      "has_warnings": false,
+      "errors": [],
+      "warnings": [],
+      "checks_passed": [
+        "BALANCE SUM CHECK PASSED: Delinquency sum ($6,868,254,002.39) is within 10% of ending balance ($6,879,673,836.14)",
+        "CATEGORY COUNT CHECK PASSED: Found 9 categories (minimum: 2)"
+      ],
+      "checks_failed": [],
+      "confidence_score": 100
+    }
+  },
+  {
+    "filename": "29.pdf",
+    "success": true,
+    "data": {
+      "series_name": "Series 2015-DNA1 September 2023",
+      "report_date": "09/25/2023",
+      "beginning_balance": 6879673836.14,
+      "ending_balance": 6822466345.63,
+      "delinquency": [
+        {
+          "category": "Current",
+          "count": 42750,
+          "balance": 6768598520.68
+        },
+        {
+          "category": "30 - 59 days",
+          "count": 171,
+          "balance": 26546824.68
+        },
+        {
+          "category": "60 - 89 days",
+          "count": 45,
+          "balance": 5970929.41
+        },
+        {
+          "category": "90 - 119 days",
+          "count": 20,
+          "balance": 3088359.21
+        },
+        {
+          "category": "120 - 179 days",
+          "count": 15,
+          "balance": 2470586.59
+        },
+        {
+          "category": "180 - 269 days",
+          "count": 12,
+          "balance": 2196723.77
+        },
+        {
+          "category": "270 - 359 days",
+          "count": 7,
+          "balance": 853108.59
+        },
+        {
+          "category": "360 - 539 days",
+          "count": 4,
+          "balance": 695418.01
+        },
+        {
+          "category": "540 + days",
+          "count": 6,
+          "balance": 811929.53
+        }
+      ],
+      "filename": "29.pdf"
+    },
+    "error": null,
+    "processing_time": 6.619652986526489,
+    "approach": "pdf_text_gemini",
+    "text_extraction_metadata": {
+      "pages": 42,
+      "tables_found": 63,
+      "method": "pdfplumber"
+    },
+    "hybrid_method": "text",
+    "validation": {
+      "has_errors": false,
+      "has_warnings": false,
+      "errors": [],
+      "warnings": [],
+      "checks_passed": [
+        "BALANCE SUM CHECK PASSED: Delinquency sum ($6,811,232,400.47) is within 10% of ending balance ($6,822,466,345.63)",
+        "CATEGORY COUNT CHECK PASSED: Found 9 categories (minimum: 2)"
+      ],
+      "checks_failed": [],
+      "confidence_score": 100
+    }
+  },
+  {
+    "filename": "3.pdf",
+    "success": true,
+    "data": {
+      "series_name": "Series 2023-HQA1",
+      "report_date": "05/28/2024",
+      "beginning_balance": 12717775058.4,
+      "ending_balance": 12651537818.77,
+      "delinquency": [
+        {
+          "category": "< 30",
+          "count": 29,
+          "balance": 10624875.92
+        },
+        {
+          "category": "30-59",
+          "count": 229,
+          "balance": 75067426.95
+        },
+        {
+          "category": "60-89",
+          "count": 67,
+          "balance": 21194613.6
+        },
+        {
+          "category": "90-119",
+          "count": 33,
+          "balance": 11428663.09
+        },
+        {
+          "category": "120-149",
+          "count": 18,
+          "balance": 6051752.99
+        },
+        {
+          "category": "150-179",
+          "count": 19,
+          "balance": 7783175.57
+        },
+        {
+          "category": "180+",
+          "count": 60,
+          "balance": 23836432.91
+        }
+      ],
+      "filename": "3.pdf"
+    },
+    "error": null,
+    "processing_time": 3.342949867248535,
+    "approach": "pdf_text_gemini",
+    "text_extraction_metadata": {
+      "pages": 27,
+      "tables_found": 47,
+      "method": "pdfplumber"
+    },
+    "hybrid_method": "text",
+    "validation": {
+      "has_errors": false,
+      "has_warnings": true,
+      "errors": [],
+      "warnings": [
+        "Balance sum mismatch: 98.8% difference"
+      ],
+      "checks_passed": [
+        "CATEGORY COUNT CHECK PASSED: Found 7 categories (minimum: 2)"
+      ],
+      "checks_failed": [
+        "BALANCE SUM CHECK FAILED: Delinquency sum ($155,986,941.03) differs by 98.8% from ending balance ($12,651,537,818.77)"
+      ],
+      "confidence_score": 70
+    }
+  },
+  {
+    "filename": "30.pdf",
+    "success": true,
+    "data": {
+      "series_name": "Series 2015-DNA1",
+      "report_date": "11/27/2023",
+      "beginning_balance": 6768656432.76,
+      "ending_balance": 6717881422.88,
+      "delinquency": [
+        {
+          "category": "Current",
+          "count": 42399,
+          "balance": 6665367402.56
+        },
+        {
+          "category": "30 - 59 days",
+          "count": 189,
+          "balance": 29937224.68
+        },
+        {
+          "category": "60 - 89 days",
+          "count": 44,
+          "balance": 6831465.97
+        },
+        {
+          "category": "90 - 119 days",
+          "count": 28,
+          "balance": 3683197.71
+        },
+        {
+          "category": "120 - 179 days",
+          "count": 22,
+          "balance": 3934886.26
+        },
+        {
+          "category": "180 - 269 days",
+          "count": 12,
+          "balance": 2209908.63
+        },
+        {
+          "category": "270 - 359 days",
+          "count": 11,
+          "balance": 1334028.47
+        },
+        {
+          "category": "360 - 539 days",
+          "count": 11,
+          "balance": 1263026.77
+        },
+        {
+          "category": "540 + days",
+          "count": 24,
+          "balance": 3320281.83
+        }
+      ],
+      "filename": "30.pdf"
+    },
+    "error": null,
+    "processing_time": 6.545609951019287,
+    "approach": "pdf_text_gemini",
+    "text_extraction_metadata": {
+      "pages": 42,
+      "tables_found": 63,
+      "method": "pdfplumber"
+    },
+    "hybrid_method": "text",
+    "validation": {
+      "has_errors": false,
+      "has_warnings": false,
+      "errors": [],
+      "warnings": [],
+      "checks_passed": [
+        "BALANCE SUM CHECK PASSED: Delinquency sum ($6,717,881,422.88) is within 10% of ending balance ($6,717,881,422.88)",
+        "CATEGORY COUNT CHECK PASSED: Found 9 categories (minimum: 2)"
+      ],
+      "checks_failed": [],
+      "confidence_score": 100
+    }
+  },
+  {
+    "filename": "31.pdf",
+    "success": true,
+    "data": {
+      "series_name": "Series 2015-DNA1",
+      "report_date": "04/25/2024",
+      "beginning_balance": 6533346719.77,
+      "ending_balance": 6485279529.99,
+      "delinquency": [
+        {
+          "category": "Current",
+          "count": 41576,
+          "balance": 6431036614.94
+        },
+        {
+          "category": "30 - 59 days",
+          "count": 183,
+          "balance": 27825508.19
+        },
+        {
+          "category": "60 - 89 days",
+          "count": 47,
+          "balance": 6609106.36
+        },
+        {
+          "category": "90 - 119 days",
+          "count": 17,
+          "balance": 3142527.02
+        },
+        {
+          "category": "120 - 179 days",
+          "count": 15,
+          "balance": 2164308.65
+        },
+        {
+          "category": "180 - 269 days",
+          "count": 18,
+          "balance": 2831805.56
+        },
+        {
+          "category": "270 - 359 days",
+          "count": 4,
+          "balance": 834664.06
+        },
+        {
+          "category": "360 - 539 days",
+          "count": 4,
+          "balance": 692078.45
+        },
+        {
+          "category": "540 + days",
+          "count": 1,
+          "balance": 117692.39
+        }
+      ],
+      "filename": "31.pdf"
+    },
+    "error": null,
+    "processing_time": 6.449960947036743,
+    "approach": "pdf_text_gemini",
+    "text_extraction_metadata": {
+      "pages": 42,
+      "tables_found": 63,
+      "method": "pdfplumber"
+    },
+    "hybrid_method": "text",
+    "validation": {
+      "has_errors": false,
+      "has_warnings": false,
+      "errors": [],
+      "warnings": [],
+      "checks_passed": [
+        "BALANCE SUM CHECK PASSED: Delinquency sum ($6,475,254,305.62) is within 10% of ending balance ($6,485,279,529.99)",
+        "CATEGORY COUNT CHECK PASSED: Found 9 categories (minimum: 2)"
+      ],
+      "checks_failed": [],
+      "confidence_score": 100
+    }
+  },
+  {
+    "filename": "32.pdf",
+    "success": true,
+    "data": {
+      "series_name": "Series 2023-HQA1",
+      "report_date": "04/25/2024",
+      "beginning_balance": 12788454529.13,
+      "ending_balance": 12717081238.32,
+      "delinquency": [
+        {
+          "category": "< 30",
+          "count": 22,
+          "balance": 7779019.07
+        },
+        {
+          "category": "30-59",
+          "count": 258,
+          "balance": 87844392.66
+        },
+        {
+          "category": "60-89",
+          "count": 61,
+          "balance": 20781670.11
+        },
+        {
+          "category": "90-119",
+          "count": 27,
+          "balance": 8291276.17
+        },
+        {
+          "category": "120-149",
+          "count": 25,
+          "balance": 9565622.39
+        },
+        {
+          "category": "150-179",
+          "count": 25,
+          "balance": 8938727.43
+        },
+        {
+          "category": "180+",
+          "count": 50,
+          "balance": 20652981.76
+        }
+      ],
+      "filename": "32.pdf"
+    },
+    "error": null,
+    "processing_time": 3.048208236694336,
+    "approach": "pdf_text_gemini",
+    "text_extraction_metadata": {
+      "pages": 26,
+      "tables_found": 46,
+      "method": "pdfplumber"
+    },
+    "hybrid_method": "text",
+    "validation": {
+      "has_errors": false,
+      "has_warnings": true,
+      "errors": [],
+      "warnings": [
+        "Balance sum mismatch: 98.7% difference"
+      ],
+      "checks_passed": [
+        "CATEGORY COUNT CHECK PASSED: Found 7 categories (minimum: 2)"
+      ],
+      "checks_failed": [
+        "BALANCE SUM CHECK FAILED: Delinquency sum ($163,853,689.59) differs by 98.7% from ending balance ($12,717,081,238.32)"
+      ],
+      "confidence_score": 70
+    }
+  },
+  {
+    "filename": "33.pdf",
+    "success": true,
+    "data": {
+      "series_name": "Series 2017-HL2",
+      "report_date": "06/25/2024",
+      "beginning_balance": 368223926.38,
+      "ending_balance": 366422390.38,
+      "delinquency": [
+        {
+          "category": "30 Days",
+          "count": 2,
+          "balance": 1354303.99
+        },
+        {
+          "category": "60 Days",
+          "count": 0,
+          "balance": 0.0
+        },
+        {
+          "category": "90 Days",
+          "count": 1,
+          "balance": 463202.12
+        },
+        {
+          "category": "120 Days",
+          "count": 0,
+          "balance": 0.0
+        },
+        {
+          "category": "150 Days",
+          "count": 0,
+          "balance": 0.0
+        },
+        {
+          "category": "180+ Days",
+          "count": 0,
+          "balance": 0.0
+        }
+      ],
+      "filename": "33.pdf"
+    },
+    "error": null,
+    "processing_time": 3.276094913482666,
+    "approach": "pdf_text_gemini",
+    "text_extraction_metadata": {
+      "pages": 28,
+      "tables_found": 55,
+      "method": "pdfplumber"
+    },
+    "hybrid_method": "text",
+    "validation": {
+      "has_errors": false,
+      "has_warnings": true,
+      "errors": [],
+      "warnings": [
+        "Balance sum mismatch: 99.5% difference"
+      ],
+      "checks_passed": [
+        "CATEGORY COUNT CHECK PASSED: Found 6 categories (minimum: 2)"
+      ],
+      "checks_failed": [
+        "BALANCE SUM CHECK FAILED: Delinquency sum ($1,817,506.11) differs by 99.5% from ending balance ($366,422,390.38)"
+      ],
+      "confidence_score": 70
+    }
+  },
+  {
+    "filename": "34.pdf",
+    "success": true,
+    "data": {
+      "series_name": "Series 2015-DNA1",
+      "report_date": "07/25/2023",
+      "beginning_balance": 7000653031.5,
+      "ending_balance": 6938391960.42,
+      "delinquency": [
+        {
+          "category": "Current",
+          "count": 43178,
+          "balance": 6881030970.27
+        },
+        {
+          "category": "30 - 59 days",
+          "count": 184,
+          "balance": 29830933.83
+        },
+        {
+          "category": "60 - 89 days",
+          "count": 37,
+          "balance": 4982193.81
+        },
+        {
+          "category": "90 - 119 days",
+          "count": 21,
+          "balance": 3306235.37
+        },
+        {
+          "category": "120 - 179 days",
+          "count": 15,
+          "balance": 2916597.64
+        },
+        {
+          "category": "180 - 269 days",
+          "count": 16,
+          "balance": 2234689.35
+        },
+        {
+          "category": "270 - 359 days",
+          "count": 10,
+          "balance": 1141285.03
+        },
+        {
+          "category": "360 - 539 days",
+          "count": 5,
+          "balance": 746519.14
+        },
+        {
+          "category": "540 + days",
+          "count": 5,
+          "balance": 736213.99
+        }
+      ],
+      "filename": "34.pdf"
+    },
+    "error": null,
+    "processing_time": 6.1189188957214355,
+    "approach": "pdf_text_gemini",
+    "text_extraction_metadata": {
+      "pages": 42,
+      "tables_found": 63,
+      "method": "pdfplumber"
+    },
+    "hybrid_method": "text",
+    "validation": {
+      "has_errors": false,
+      "has_warnings": false,
+      "errors": [],
+      "warnings": [],
+      "checks_passed": [
+        "BALANCE SUM CHECK PASSED: Delinquency sum ($6,926,925,638.43) is within 10% of ending balance ($6,938,391,960.42)",
+        "CATEGORY COUNT CHECK PASSED: Found 9 categories (minimum: 2)"
+      ],
+      "checks_failed": [],
+      "confidence_score": 100
+    }
+  },
+  {
+    "filename": "35.pdf",
+    "success": true,
+    "data": {
+      "series_name": "Series 2017-HL2",
+      "report_date": "10/25/2024",
+      "beginning_balance": 359524144.93,
+      "ending_balance": 358541469.02,
+      "delinquency": [
+        {
+          "category": "30 Days",
+          "count": 1,
+          "balance": 745696.11
+        },
+        {
+          "category": "60 Days",
+          "count": 0,
+          "balance": 0.0
+        },
+        {
+          "category": "90 Days",
+          "count": 0,
+          "balance": 0.0
+        },
+        {
+          "category": "120 Days",
+          "count": 0,
+          "balance": 0.0
+        },
+        {
+          "category": "150 Days",
+          "count": 1,
+          "balance": 601534.54
+        },
+        {
+          "category": "180+ Days",
+          "count": 0,
+          "balance": 0.0
+        },
+        {
+          "category": "0-29 Days",
+          "count": 0,
+          "balance": 0.0
+        },
+        {
+          "category": "30 Days",
+          "count": 0,
+          "balance": 0.0
+        },
+        {
+          "category": "60 Days",
+          "count": 0,
+          "balance": 0.0
+        },
+        {
+          "category": "90 Days",
+          "count": 0,
+          "balance": 0.0
+        },
+        {
+          "category": "120 Days",
+          "count": 0,
+          "balance": 0.0
+        },
+        {
+          "category": "150 Days",
+          "count": 0,
+          "balance": 0.0
+        },
+        {
+          "category": "180+ Days",
+          "count": 1,
+          "balance": 463202.12
+        },
+        {
+          "category": "0-29 Days",
+          "count": 0,
+          "balance": 0.0
+        },
+        {
+          "category": "30 Days",
+          "count": 0,
+          "balance": 0.0
+        },
+        {
+          "category": "60 Days",
+          "count": 0,
+          "balance": 0.0
+        },
+        {
+          "category": "90 Days",
+          "count": 0,
+          "balance": 0.0
+        },
+        {
+          "category": "120 Days",
+          "count": 0,
+          "balance": 0.0
+        },
+        {
+          "category": "150 Days",
+          "count": 0,
+          "balance": 0.0
+        },
+        {
+          "category": "180+ Days",
+          "count": 0,
+          "balance": 0.0
+        },
+        {
+          "category": "0-29 Days",
+          "count": 0,
+          "balance": 0.0
+        },
+        {
+          "category": "30 Days",
+          "count": 1,
+          "balance": 745696.11
+        },
+        {
+          "category": "60 Days",
+          "count": 0,
+          "balance": 0.0
+        },
+        {
+          "category": "90 Days",
+          "count": 0,
+          "balance": 0.0
+        },
+        {
+          "category": "120 Days",
+          "count": 0,
+          "balance": 0.0
+        },
+        {
+          "category": "150 Days",
+          "count": 1,
+          "balance": 601534.54
+        },
+        {
+          "category": "180+ Days",
+          "count": 1,
+          "balance": 463202.12
+        }
+      ],
+      "filename": "35.pdf"
+    },
+    "error": null,
+    "processing_time": 5.113568067550659,
+    "approach": "pdf_text_gemini",
+    "text_extraction_metadata": {
+      "pages": 29,
+      "tables_found": 57,
+      "method": "pdfplumber"
+    },
+    "hybrid_method": "text",
+    "validation": {
+      "has_errors": false,
+      "has_warnings": true,
+      "errors": [],
+      "warnings": [
+        "Balance sum mismatch: 99.0% difference"
+      ],
+      "checks_passed": [
+        "CATEGORY COUNT CHECK PASSED: Found 27 categories (minimum: 2)"
+      ],
+      "checks_failed": [
+        "BALANCE SUM CHECK FAILED: Delinquency sum ($3,620,865.54) differs by 99.0% from ending balance ($358,541,469.02)"
+      ],
+      "confidence_score": 70
+    }
+  },
+  {
+    "filename": "36.pdf",
+    "success": true,
+    "data": {
+      "series_name": "Series 2016-C05",
+      "report_date": "03/27/2017",
+      "beginning_balance": 35279653088.32,
+      "ending_balance": 34987060629.82,
+      "delinquency": [
+        {
+          "category": "30 Days",
+          "count": 911,
+          "balance": 206778064.92
+        },
+        {
+          "category": "60 Days",
+          "count": 137,
+          "balance": 30045813.97
+        },
+        {
+          "category": "90 Days",
+          "count": 73,
+          "balance": 14536627.51
+        },
+        {
+          "category": "120 Days",
+          "count": 41,
+          "balance": 9015489.35
+        },
+        {
+          "category": "150 Days",
+          "count": 34,
+          "balance": 7529705.17
+        },
+        {
+          "category": "180+ Days",
+          "count": 36,
+          "balance": 7698343.84
+        }
+      ],
+      "filename": "36.pdf"
+    },
+    "error": null,
+    "processing_time": 3.0751070976257324,
+    "approach": "pdf_text_gemini",
+    "text_extraction_metadata": {
+      "pages": 16,
+      "tables_found": 43,
+      "method": "pdfplumber"
+    },
+    "hybrid_method": "text",
+    "validation": {
+      "has_errors": false,
+      "has_warnings": true,
+      "errors": [],
+      "warnings": [
+        "Balance sum mismatch: 99.2% difference"
+      ],
+      "checks_passed": [
+        "CATEGORY COUNT CHECK PASSED: Found 6 categories (minimum: 2)"
+      ],
+      "checks_failed": [
+        "BALANCE SUM CHECK FAILED: Delinquency sum ($275,604,044.76) differs by 99.2% from ending balance ($34,987,060,629.82)"
+      ],
+      "confidence_score": 70
+    }
+  },
+  {
+    "filename": "37.pdf",
+    "success": true,
+    "data": {
+      "series_name": "Series 2017-HL2",
+      "report_date": "04/25/2024",
+      "beginning_balance": 370440691.72,
+      "ending_balance": 369326224.98,
+      "delinquency": [
+        {
+          "category": "0-29 Days",
+          "count": 0,
+          "balance": 0.0
+        },
+        {
+          "category": "30 Days",
+          "count": 2,
+          "balance": 1219475.27
+        },
+        {
+          "category": "60 Days",
+          "count": 0,
+          "balance": 0.0
+        },
+        {
+          "category": "90 Days",
+          "count": 0,
+          "balance": 0.0
+        },
+        {
+          "category": "120 Days",
+          "count": 0,
+          "balance": 0.0
+        },
+        {
+          "category": "150 Days",
+          "count": 0,
+          "balance": 0.0
+        },
+        {
+          "category": "180+ Days",
+          "count": 0,
+          "balance": 0.0
+        }
+      ],
+      "filename": "37.pdf"
+    },
+    "error": null,
+    "processing_time": 3.382981777191162,
+    "approach": "pdf_text_gemini",
+    "text_extraction_metadata": {
+      "pages": 28,
+      "tables_found": 55,
+      "method": "pdfplumber"
+    },
+    "hybrid_method": "text",
+    "validation": {
+      "has_errors": false,
+      "has_warnings": true,
+      "errors": [],
+      "warnings": [
+        "Balance sum mismatch: 99.7% difference"
+      ],
+      "checks_passed": [
+        "CATEGORY COUNT CHECK PASSED: Found 7 categories (minimum: 2)"
+      ],
+      "checks_failed": [
+        "BALANCE SUM CHECK FAILED: Delinquency sum ($1,219,475.27) differs by 99.7% from ending balance ($369,326,224.98)"
+      ],
+      "confidence_score": 70
+    }
+  },
+  {
+    "filename": "38.pdf",
+    "success": true,
+    "data": {
+      "series_name": "Series 2016-C05",
+      "report_date": "01/25/2017",
+      "beginning_balance": 36467441987.47,
+      "ending_balance": 35795683553.36,
+      "delinquency": [
+        {
+          "category": "30 Days",
+          "count": 828,
+          "balance": 184553460.92
+        },
+        {
+          "category": "60 Days",
+          "count": 110,
+          "balance": 23613168.95
+        },
+        {
+          "category": "90 Days",
+          "count": 59,
+          "balance": 13364848.19
+        },
+        {
+          "category": "120 Days",
+          "count": 24,
+          "balance": 5489174.91
+        },
+        {
+          "category": "150 Days",
+          "count": 18,
+          "balance": 3775003.89
+        },
+        {
+          "category": "180+ Days",
+          "count": 10,
+          "balance": 1769565.57
+        }
+      ],
+      "filename": "38.pdf"
+    },
+    "error": null,
+    "processing_time": 3.002588987350464,
+    "approach": "pdf_text_gemini",
+    "text_extraction_metadata": {
+      "pages": 17,
+      "tables_found": 44,
+      "method": "pdfplumber"
+    },
+    "hybrid_method": "text",
+    "validation": {
+      "has_errors": false,
+      "has_warnings": true,
+      "errors": [],
+      "warnings": [
+        "Balance sum mismatch: 99.4% difference"
+      ],
+      "checks_passed": [
+        "CATEGORY COUNT CHECK PASSED: Found 6 categories (minimum: 2)"
+      ],
+      "checks_failed": [
+        "BALANCE SUM CHECK FAILED: Delinquency sum ($232,565,222.43) differs by 99.4% from ending balance ($35,795,683,553.36)"
+      ],
+      "confidence_score": 70
+    }
+  },
+  {
+    "filename": "39.pdf",
+    "success": true,
+    "data": {
+      "series_name": "Series 2017-HL2",
+      "report_date": "09/25/2024",
+      "beginning_balance": 360761791.45,
+      "ending_balance": 359524144.93,
+      "delinquency": [
+        {
+          "category": "30 Days",
+          "count": 1,
+          "balance": 747472.73
+        },
+        {
+          "category": "60 Days",
+          "count": 0,
+          "balance": 0.0
+        },
+        {
+          "category": "90 Days",
+          "count": 0,
+          "balance": 0.0
+        },
+        {
+          "category": "120 Days",
+          "count": 1,
+          "balance": 601534.54
+        },
+        {
+          "category": "150 Days",
+          "count": 0,
+          "balance": 0.0
+        },
+        {
+          "category": "180+ Days",
+          "count": 1,
+          "balance": 463202.12
+        },
+        {
+          "category": "0-29 Days",
+          "count": 0,
+          "balance": 0.0
+        },
+        {
+          "category": "30 Days",
+          "count": 0,
+          "balance": 0.0
+        },
+        {
+          "category": "60 Days",
+          "count": 0,
+          "balance": 0.0
+        },
+        {
+          "category": "90 Days",
+          "count": 0,
+          "balance": 0.0
+        },
+        {
+          "category": "120 Days",
+          "count": 0,
+          "balance": 0.0
+        },
+        {
+          "category": "150 Days",
+          "count": 0,
+          "balance": 0.0
+        },
+        {
+          "category": "180+ Days",
+          "count": 0,
+          "balance": 0.0
+        },
+        {
+          "category": "0-29 Days",
+          "count": 0,
+          "balance": 0.0
+        },
+        {
+          "category": "30 Days",
+          "count": 0,
+          "balance": 0.0
+        },
+        {
+          "category": "60 Days",
+          "count": 0,
+          "balance": 0.0
+        },
+        {
+          "category": "90 Days",
+          "count": 0,
+          "balance": 0.0
+        },
+        {
+          "category": "120 Days",
+          "count": 0,
+          "balance": 0.0
+        },
+        {
+          "category": "150 Days",
+          "count": 0,
+          "balance": 0.0
+        },
+        {
+          "category": "180+ Days",
+          "count": 0,
+          "balance": 0.0
+        },
+        {
+          "category": "0-29 Days",
+          "count": 0,
+          "balance": 0.0
+        },
+        {
+          "category": "30 Days",
+          "count": 0,
+          "balance": 0.0
+        },
+        {
+          "category": "60 Days",
+          "count": 0,
+          "balance": 0.0
+        },
+        {
+          "category": "90 Days",
+          "count": 0,
+          "balance": 0.0
+        },
+        {
+          "category": "120 Days",
+          "count": 0,
+          "balance": 0.0
+        },
+        {
+          "category": "150 Days",
+          "count": 0,
+          "balance": 0.0
+        },
+        {
+          "category": "180+ Days",
+          "count": 0,
+          "balance": 0.0
+        },
+        {
+          "category": "0-29 Days",
+          "count": 0,
+          "balance": 0.0
+        },
+        {
+          "category": "30 Days",
+          "count": 1,
+          "balance": 747472.73
+        },
+        {
+          "category": "60 Days",
+          "count": 0,
+          "balance": 0.0
+        },
+        {
+          "category": "90 Days",
+          "count": 0,
+          "balance": 0.0
+        },
+        {
+          "category": "120 Days",
+          "count": 1,
+          "balance": 601534.54
+        },
+        {
+          "category": "150 Days",
+          "count": 0,
+          "balance": 0.0
+        },
+        {
+          "category": "180+ Days",
+          "count": 1,
+          "balance": 463202.12
+        }
+      ],
+      "filename": "39.pdf"
+    },
+    "error": null,
+    "processing_time": 5.90605092048645,
+    "approach": "pdf_text_gemini",
+    "text_extraction_metadata": {
+      "pages": 29,
+      "tables_found": 56,
+      "method": "pdfplumber"
+    },
+    "hybrid_method": "text",
+    "validation": {
+      "has_errors": false,
+      "has_warnings": true,
+      "errors": [],
+      "warnings": [
+        "Balance sum mismatch: 99.0% difference"
+      ],
+      "checks_passed": [
+        "CATEGORY COUNT CHECK PASSED: Found 34 categories (minimum: 2)"
+      ],
+      "checks_failed": [
+        "BALANCE SUM CHECK FAILED: Delinquency sum ($3,624,418.78) differs by 99.0% from ending balance ($359,524,144.93)"
+      ],
+      "confidence_score": 70
+    }
+  },
+  {
+    "filename": "4.pdf",
+    "success": true,
+    "data": {
+      "series_name": "Series 2016-C05",
+      "report_date": "06/26/2017",
+      "beginning_balance": 34440007363.72,
+      "ending_balance": 34151969661.71,
+      "delinquency": [
+        {
+          "category": "30 Days",
+          "count": 1065,
+          "balance": 233433849.56
+        },
+        {
+          "category": "60 Days",
+          "count": 142,
+          "balance": 30701359.21
+        },
+        {
+          "category": "90 Days",
+          "count": 68,
+          "balance": 14377506.44
+        },
+        {
+          "category": "120 Days",
+          "count": 48,
+          "balance": 11204299.89
+        },
+        {
+          "category": "150 Days",
+          "count": 34,
+          "balance": 7719555.97
+        },
+        {
+          "category": "180+ Days",
+          "count": 88,
+          "balance": 18938323.92
+        }
+      ],
+      "filename": "4.pdf"
+    },
+    "error": null,
+    "processing_time": 3.3216259479522705,
+    "approach": "pdf_text_gemini",
+    "text_extraction_metadata": {
+      "pages": 20,
+      "tables_found": 59,
+      "method": "pdfplumber"
+    },
+    "hybrid_method": "text",
+    "validation": {
+      "has_errors": false,
+      "has_warnings": true,
+      "errors": [],
+      "warnings": [
+        "Balance sum mismatch: 99.1% difference"
+      ],
+      "checks_passed": [
+        "CATEGORY COUNT CHECK PASSED: Found 6 categories (minimum: 2)"
+      ],
+      "checks_failed": [
+        "BALANCE SUM CHECK FAILED: Delinquency sum ($316,374,894.99) differs by 99.1% from ending balance ($34,151,969,661.71)"
+      ],
+      "confidence_score": 70
+    }
+  },
+  {
+    "filename": "40.pdf",
+    "success": true,
+    "data": {
+      "series_name": "Series 2023-HQA1",
+      "report_date": "10/25/2024",
+      "beginning_balance": 12348291193.21,
+      "ending_balance": 12285993470.48,
+      "delinquency": [
+        {
+          "category": "30 Day",
+          "count": 300,
+          "balance": 96499611
+        },
+        {
+          "category": "60 Day",
+          "count": 81,
+          "balance": 25953626
+        },
+        {
+          "category": "90 Day",
+          "count": 44,
+          "balance": 14329346
+        },
+        {
+          "category": "120 Day",
+          "count": 30,
+          "balance": 10678117
+        },
+        {
+          "category": "150 Day",
+          "count": 20,
+          "balance": 6648020
+        },
+        {
+          "category": "180+ Day",
+          "count": 52,
+          "balance": 19090167
+        },
+        {
+          "category": "Bankruptcy",
+          "count": 62,
+          "balance": 19417239
+        },
+        {
+          "category": "Foreclosure",
+          "count": 17,
+          "balance": 4720083
+        },
+        {
+          "category": "REO",
+          "count": 0,
+          "balance": 0
+        }
+      ],
+      "filename": "40.pdf"
+    },
+    "error": null,
+    "processing_time": 3.871163845062256,
+    "approach": "pdf_text_gemini",
+    "text_extraction_metadata": {
+      "pages": 29,
+      "tables_found": 31,
+      "method": "pdfplumber"
+    },
+    "hybrid_method": "text",
+    "validation": {
+      "has_errors": false,
+      "has_warnings": true,
+      "errors": [],
+      "warnings": [
+        "Balance sum mismatch: 98.4% difference"
+      ],
+      "checks_passed": [
+        "CATEGORY COUNT CHECK PASSED: Found 9 categories (minimum: 2)"
+      ],
+      "checks_failed": [
+        "BALANCE SUM CHECK FAILED: Delinquency sum ($197,336,209.00) differs by 98.4% from ending balance ($12,285,993,470.48)"
+      ],
+      "confidence_score": 70
+    }
+  },
+  {
+    "filename": "41.pdf",
+    "success": true,
+    "data": {
+      "series_name": "Series 2023-HQA1",
+      "report_date": "03/25/2024",
+      "beginning_balance": 12846984798.71,
+      "ending_balance": 12788454529.13,
+      "delinquency": [
+        {
+          "category": "< 30",
+          "count": 19,
+          "balance": 6834863.55
+        },
+        {
+          "category": "30-59",
+          "count": 274,
+          "balance": 92266656.04
+        },
+        {
+          "category": "60-89",
+          "count": 61,
+          "balance": 20947068.31
+        },
+        {
+          "category": "90-119",
+          "count": 26,
+          "balance": 8580379.17
+        },
+        {
+          "category": "120-149",
+          "count": 31,
+          "balance": 11646011.23
+        },
+        {
+          "category": "150-179",
+          "count": 22,
+          "balance": 7300016.48
+        },
+        {
+          "category": "180+",
+          "count": 45,
+          "balance": 18727512.39
+        }
+      ],
+      "filename": "41.pdf"
+    },
+    "error": null,
+    "processing_time": 3.084963083267212,
+    "approach": "pdf_text_gemini",
+    "text_extraction_metadata": {
+      "pages": 26,
+      "tables_found": 46,
+      "method": "pdfplumber"
+    },
+    "hybrid_method": "text",
+    "validation": {
+      "has_errors": false,
+      "has_warnings": true,
+      "errors": [],
+      "warnings": [
+        "Balance sum mismatch: 98.7% difference"
+      ],
+      "checks_passed": [
+        "CATEGORY COUNT CHECK PASSED: Found 7 categories (minimum: 2)"
+      ],
+      "checks_failed": [
+        "BALANCE SUM CHECK FAILED: Delinquency sum ($166,302,507.17) differs by 98.7% from ending balance ($12,788,454,529.13)"
+      ],
+      "confidence_score": 70
+    }
+  },
+  {
+    "filename": "42.pdf",
+    "success": true,
+    "data": {
+      "series_name": "Series 2023-HQA1",
+      "report_date": "09/25/2024",
+      "beginning_balance": 12416578237.91,
+      "ending_balance": 12348291193.21,
+      "delinquency": [
+        {
+          "category": "30 Day",
+          "count": 273,
+          "balance": 91279874.0
+        },
+        {
+          "category": "60 Day",
+          "count": 79,
+          "balance": 24964048.0
+        },
+        {
+          "category": "90 Day",
+          "count": 45,
+          "balance": 15927318.0
+        },
+        {
+          "category": "120 Day",
+          "count": 25,
+          "balance": 8904106.0
+        },
+        {
+          "category": "150 Day",
+          "count": 17,
+          "balance": 4783024.0
+        },
+        {
+          "category": "180+ Day",
+          "count": 54,
+          "balance": 20765429.0
+        },
+        {
+          "category": "Bankruptcy",
+          "count": 56,
+          "balance": 18022626.0
+        },
+        {
+          "category": "Foreclosure",
+          "count": 13,
+          "balance": 3683555.0
+        },
+        {
+          "category": "REO",
+          "count": 0,
+          "balance": 0.0
+        }
+      ],
+      "filename": "42.pdf"
+    },
+    "error": null,
+    "processing_time": 3.5574393272399902,
+    "approach": "pdf_text_gemini",
+    "text_extraction_metadata": {
+      "pages": 28,
+      "tables_found": 30,
+      "method": "pdfplumber"
+    },
+    "hybrid_method": "text",
+    "validation": {
+      "has_errors": false,
+      "has_warnings": true,
+      "errors": [],
+      "warnings": [
+        "Balance sum mismatch: 98.5% difference"
+      ],
+      "checks_passed": [
+        "CATEGORY COUNT CHECK PASSED: Found 9 categories (minimum: 2)"
+      ],
+      "checks_failed": [
+        "BALANCE SUM CHECK FAILED: Delinquency sum ($188,329,980.00) differs by 98.5% from ending balance ($12,348,291,193.21)"
+      ],
+      "confidence_score": 70
+    }
+  },
+  {
+    "filename": "43.pdf",
+    "success": true,
+    "data": {
+      "series_name": "Series 2023-HQA1",
+      "report_date": "06/25/2024",
+      "beginning_balance": 12650689171.37,
+      "ending_balance": 12568571604.18,
+      "delinquency": [
+        {
+          "category": "< 30",
+          "count": 34,
+          "balance": 11878039.49
+        },
+        {
+          "category": "30-59",
+          "count": 218,
+          "balance": 73792961.91
+        },
+        {
+          "category": "60-89",
+          "count": 72,
+          "balance": 22907408.5
+        },
+        {
+          "category": "90-119",
+          "count": 33,
+          "balance": 11377885.69
+        },
+        {
+          "category": "120-149",
+          "count": 27,
+          "balance": 9784968.39
+        },
+        {
+          "category": "150-179",
+          "count": 16,
+          "balance": 6340430.57
+        },
+        {
+          "category": "180+",
+          "count": 51,
+          "balance": 19110566.55
+        }
+      ],
+      "filename": "43.pdf"
+    },
+    "error": null,
+    "processing_time": 3.4873857498168945,
+    "approach": "pdf_text_gemini",
+    "text_extraction_metadata": {
+      "pages": 28,
+      "tables_found": 47,
+      "method": "pdfplumber"
+    },
+    "hybrid_method": "text",
+    "validation": {
+      "has_errors": false,
+      "has_warnings": true,
+      "errors": [],
+      "warnings": [
+        "Balance sum mismatch: 98.8% difference"
+      ],
+      "checks_passed": [
+        "CATEGORY COUNT CHECK PASSED: Found 7 categories (minimum: 2)"
+      ],
+      "checks_failed": [
+        "BALANCE SUM CHECK FAILED: Delinquency sum ($155,192,261.10) differs by 98.8% from ending balance ($12,568,571,604.18)"
+      ],
+      "confidence_score": 70
+    }
+  },
+  {
+    "filename": "44.pdf",
+    "success": true,
+    "data": {
+      "series_name": "Series 2023-HQA1",
+      "report_date": "01/25/2024",
+      "beginning_balance": 12952684473.14,
+      "ending_balance": 12902406392.46,
+      "delinquency": [
+        {
+          "category": "< 30",
+          "count": 20,
+          "balance": 6904685.22
+        },
+        {
+          "category": "30-59",
+          "count": 302,
+          "balance": 102009538.46
+        },
+        {
+          "category": "60-89",
+          "count": 65,
+          "balance": 21624535.17
+        },
+        {
+          "category": "90-119",
+          "count": 23,
+          "balance": 7518383.05
+        },
+        {
+          "category": "120-149",
+          "count": 22,
+          "balance": 8290607.47
+        },
+        {
+          "category": "150-179",
+          "count": 23,
+          "balance": 8741823.42
+        },
+        {
+          "category": "180+",
+          "count": 35,
+          "balance": 14822034.38
+        },
+        {
+          "category": "Total",
+          "count": 470,
+          "balance": 163006921.95
+        }
+      ],
+      "filename": "44.pdf"
+    },
+    "error": null,
+    "processing_time": 2.9835689067840576,
+    "approach": "pdf_text_gemini",
+    "text_extraction_metadata": {
+      "pages": 25,
+      "tables_found": 45,
+      "method": "pdfplumber"
+    },
+    "hybrid_method": "text",
+    "validation": {
+      "has_errors": false,
+      "has_warnings": true,
+      "errors": [],
+      "warnings": [
+        "Balance sum mismatch: 97.4% difference"
+      ],
+      "checks_passed": [
+        "CATEGORY COUNT CHECK PASSED: Found 8 categories (minimum: 2)"
+      ],
+      "checks_failed": [
+        "BALANCE SUM CHECK FAILED: Delinquency sum ($332,918,529.12) differs by 97.4% from ending balance ($12,902,406,392.46)"
+      ],
+      "confidence_score": 70
+    }
+  },
+  {
+    "filename": "45.pdf",
+    "success": true,
+    "data": {
+      "series_name": "Series 2023-HQA1",
+      "report_date": "08/26/2024",
+      "beginning_balance": 12495336236.03,
+      "ending_balance": 12417949407.95,
+      "delinquency": [
+        {
+          "category": "30 Day",
+          "count": 297,
+          "balance": 95896049
+        },
+        {
+          "category": "60 Day",
+          "count": 78,
+          "balance": 24632936
+        },
+        {
+          "category": "90 Day",
+          "count": 39,
+          "balance": 13635302
+        },
+        {
+          "category": "120 Day",
+          "count": 27,
+          "balance": 8402246
+        },
+        {
+          "category": "150 Day",
+          "count": 23,
+          "balance": 8002203
+        },
+        {
+          "category": "180+ Day",
+          "count": 52,
+          "balance": 20694823
+        },
+        {
+          "category": "Bankruptcy",
+          "count": 48,
+          "balance": 16102934
+        },
+        {
+          "category": "Foreclosure",
+          "count": 11,
+          "balance": 3621755
+        },
+        {
+          "category": "REO",
+          "count": 0,
+          "balance": 0
+        }
+      ],
+      "filename": "45.pdf"
+    },
+    "error": null,
+    "processing_time": 3.345698118209839,
+    "approach": "pdf_text_gemini",
+    "text_extraction_metadata": {
+      "pages": 28,
+      "tables_found": 30,
+      "method": "pdfplumber"
+    },
+    "hybrid_method": "text",
+    "validation": {
+      "has_errors": false,
+      "has_warnings": true,
+      "errors": [],
+      "warnings": [
+        "Balance sum mismatch: 98.5% difference"
+      ],
+      "checks_passed": [
+        "CATEGORY COUNT CHECK PASSED: Found 9 categories (minimum: 2)"
+      ],
+      "checks_failed": [
+        "BALANCE SUM CHECK FAILED: Delinquency sum ($190,988,248.00) differs by 98.5% from ending balance ($12,417,949,407.95)"
+      ],
+      "confidence_score": 70
+    }
+  },
+  {
+    "filename": "46.pdf",
+    "success": true,
+    "data": {
+      "series_name": "Series 2023-HQA1",
+      "report_date": "02/26/2024",
+      "beginning_balance": 12902717663.74,
+      "ending_balance": 12847429003.98,
+      "delinquency": [
+        {
+          "category": "< 30",
+          "count": 20,
+          "balance": 6881169.82
+        },
+        {
+          "category": "30-59",
+          "count": 252,
+          "balance": 83069351.15
+        },
+        {
+          "category": "60-89",
+          "count": 66,
+          "balance": 21621681.21
+        },
+        {
+          "category": "90-119",
+          "count": 34,
+          "balance": 13008835.07
+        },
+        {
+          "category": "120-149",
+          "count": 24,
+          "balance": 8196572.21
+        },
+        {
+          "category": "150-179",
+          "count": 12,
+          "balance": 4097907.42
+        },
+        {
+          "category": "180+",
+          "count": 48,
+          "balance": 19616840.58
+        }
+      ],
+      "filename": "46.pdf"
+    },
+    "error": null,
+    "processing_time": 3.045117139816284,
+    "approach": "pdf_text_gemini",
+    "text_extraction_metadata": {
+      "pages": 25,
+      "tables_found": 45,
+      "method": "pdfplumber"
+    },
+    "hybrid_method": "text",
+    "validation": {
+      "has_errors": false,
+      "has_warnings": true,
+      "errors": [],
+      "warnings": [
+        "Balance sum mismatch: 98.8% difference"
+      ],
+      "checks_passed": [
+        "CATEGORY COUNT CHECK PASSED: Found 7 categories (minimum: 2)"
+      ],
+      "checks_failed": [
+        "BALANCE SUM CHECK FAILED: Delinquency sum ($156,492,357.46) differs by 98.8% from ending balance ($12,847,429,003.98)"
+      ],
+      "confidence_score": 70
+    }
+  },
+  {
+    "filename": "47.pdf",
+    "success": true,
+    "data": {
+      "series_name": "Series 2016-C05",
+      "report_date": "02/27/2017",
+      "beginning_balance": 35795683553.36,
+      "ending_balance": 35279653088.32,
+      "delinquency": [
+        {
+          "category": "30 Days",
+          "count": 987,
+          "balance": 221097165.42
+        },
+        {
+          "category": "60 Days",
+          "count": 125,
+          "balance": 25204376.26
+        },
+        {
+          "category": "90 Days",
+          "count": 59,
+          "balance": 13487287.87
+        },
+        {
+          "category": "120 Days",
+          "count": 40,
+          "balance": 8463775.01
+        },
+        {
+          "category": "150 Days",
+          "count": 18,
+          "balance": 4595954.02
+        },
+        {
+          "category": "180+ Days",
+          "count": 25,
+          "balance": 4778271.7
+        }
+      ],
+      "filename": "47.pdf"
+    },
+    "error": null,
+    "processing_time": 2.99507474899292,
+    "approach": "pdf_text_gemini",
+    "text_extraction_metadata": {
+      "pages": 17,
+      "tables_found": 44,
+      "method": "pdfplumber"
+    },
+    "hybrid_method": "text",
+    "validation": {
+      "has_errors": false,
+      "has_warnings": true,
+      "errors": [],
+      "warnings": [
+        "Balance sum mismatch: 99.2% difference"
+      ],
+      "checks_passed": [
+        "CATEGORY COUNT CHECK PASSED: Found 6 categories (minimum: 2)"
+      ],
+      "checks_failed": [
+        "BALANCE SUM CHECK FAILED: Delinquency sum ($277,626,830.28) differs by 99.2% from ending balance ($35,279,653,088.32)"
+      ],
+      "confidence_score": 70
+    }
+  },
+  {
+    "filename": "48.pdf",
+    "success": true,
+    "data": {
+      "series_name": "Series 2023-HQA1",
+      "report_date": "07/25/2024",
+      "beginning_balance": 12568571604.18,
+      "ending_balance": 12494054258.14,
+      "delinquency": [
+        {
+          "category": "< 30",
+          "count": 35,
+          "balance": 12073300.4
+        },
+        {
+          "category": "30-59",
+          "count": 284,
+          "balance": 93870760.53
+        },
+        {
+          "category": "60-89",
+          "count": 75,
+          "balance": 24691704.23
+        },
+        {
+          "category": "90-119",
+          "count": 46,
+          "balance": 15101272.57
+        },
+        {
+          "category": "120-149",
+          "count": 21,
+          "balance": 7371932.08
+        },
+        {
+          "category": "150-179",
+          "count": 19,
+          "balance": 6919466.95
+        },
+        {
+          "category": "180+",
+          "count": 52,
+          "balance": 20026393.74
+        }
+      ],
+      "filename": "48.pdf"
+    },
+    "error": null,
+    "processing_time": 3.338430881500244,
+    "approach": "pdf_text_gemini",
+    "text_extraction_metadata": {
+      "pages": 28,
+      "tables_found": 48,
+      "method": "pdfplumber"
+    },
+    "hybrid_method": "text",
+    "validation": {
+      "has_errors": false,
+      "has_warnings": true,
+      "errors": [],
+      "warnings": [
+        "Balance sum mismatch: 98.6% difference"
+      ],
+      "checks_passed": [
+        "CATEGORY COUNT CHECK PASSED: Found 7 categories (minimum: 2)"
+      ],
+      "checks_failed": [
+        "BALANCE SUM CHECK FAILED: Delinquency sum ($180,054,830.50) differs by 98.6% from ending balance ($12,494,054,258.14)"
+      ],
+      "confidence_score": 70
+    }
+  },
+  {
+    "filename": "49.pdf",
+    "success": true,
+    "data": {
+      "series_name": "Series 2023-HQA1",
+      "report_date": "01/25/2024",
+      "beginning_balance": 12952684473.14,
+      "ending_balance": 12902406392.46,
+      "delinquency": [
+        {
+          "category": "< 30",
+          "count": 20,
+          "balance": 6904685.22
+        },
+        {
+          "category": "30-59",
+          "count": 302,
+          "balance": 102009538.46
+        },
+        {
+          "category": "60-89",
+          "count": 65,
+          "balance": 21624535.17
+        },
+        {
+          "category": "90-119",
+          "count": 23,
+          "balance": 7518383.05
+        },
+        {
+          "category": "120-149",
+          "count": 22,
+          "balance": 8290607.47
+        },
+        {
+          "category": "150-179",
+          "count": 23,
+          "balance": 8741823.42
+        },
+        {
+          "category": "180+",
+          "count": 35,
+          "balance": 14822034.38
+        },
+        {
+          "category": "Total",
+          "count": 470,
+          "balance": 163006921.95
+        }
+      ],
+      "filename": "49.pdf"
+    },
+    "error": null,
+    "processing_time": 2.9181997776031494,
+    "approach": "pdf_text_gemini",
+    "text_extraction_metadata": {
+      "pages": 25,
+      "tables_found": 45,
+      "method": "pdfplumber"
+    },
+    "hybrid_method": "text",
+    "validation": {
+      "has_errors": false,
+      "has_warnings": true,
+      "errors": [],
+      "warnings": [
+        "Balance sum mismatch: 97.4% difference"
+      ],
+      "checks_passed": [
+        "CATEGORY COUNT CHECK PASSED: Found 8 categories (minimum: 2)"
+      ],
+      "checks_failed": [
+        "BALANCE SUM CHECK FAILED: Delinquency sum ($332,918,529.12) differs by 97.4% from ending balance ($12,902,406,392.46)"
+      ],
+      "confidence_score": 70
+    }
+  },
+  {
+    "filename": "5.pdf",
+    "success": true,
+    "data": {
+      "series_name": "Series 2017-HL2",
+      "report_date": "05/28/2024",
+      "beginning_balance": 369326224.98,
+      "ending_balance": 368223926.38,
+      "delinquency": [
+        {
+          "category": "0-29 Days",
+          "count": 0,
+          "balance": 0.0
+        },
+        {
+          "category": "30 Days",
+          "count": 1,
+          "balance": 754524.03
+        },
+        {
+          "category": "60 Days",
+          "count": 1,
+          "balance": 463202.12
+        },
+        {
+          "category": "90 Days",
+          "count": 0,
+          "balance": 0.0
+        },
+        {
+          "category": "120 Days",
+          "count": 0,
+          "balance": 0.0
+        },
+        {
+          "category": "150 Days",
+          "count": 0,
+          "balance": 0.0
+        },
+        {
+          "category": "180+ Days",
+          "count": 0,
+          "balance": 0.0
+        }
+      ],
+      "filename": "5.pdf"
+    },
+    "error": null,
+    "processing_time": 3.1999940872192383,
+    "approach": "pdf_text_gemini",
+    "text_extraction_metadata": {
+      "pages": 28,
+      "tables_found": 55,
+      "method": "pdfplumber"
+    },
+    "hybrid_method": "text",
+    "validation": {
+      "has_errors": false,
+      "has_warnings": true,
+      "errors": [],
+      "warnings": [
+        "Balance sum mismatch: 99.7% difference"
+      ],
+      "checks_passed": [
+        "CATEGORY COUNT CHECK PASSED: Found 7 categories (minimum: 2)"
+      ],
+      "checks_failed": [
+        "BALANCE SUM CHECK FAILED: Delinquency sum ($1,217,726.15) differs by 99.7% from ending balance ($368,223,926.38)"
+      ],
+      "confidence_score": 70
+    }
+  },
+  {
+    "filename": "50.pdf",
+    "success": true,
+    "data": {
+      "series_name": "Series 2017-HL2",
+      "report_date": "02/26/2024",
+      "beginning_balance": 372489728.0,
+      "ending_balance": 371460713.33,
+      "delinquency": [
+        {
+          "category": "30 Days",
+          "count": 1,
+          "balance": 759755.06
+        },
+        {
+          "category": "60 Days",
+          "count": 0,
+          "balance": 0.0
+        },
+        {
+          "category": "90 Days",
+          "count": 0,
+          "balance": 0.0
+        },
+        {
+          "category": "120 Days",
+          "count": 0,
+          "balance": 0.0
+        },
+        {
+          "category": "150 Days",
+          "count": 0,
+          "balance": 0.0
+        },
+        {
+          "category": "180+ Days",
+          "count": 0,
+          "balance": 0.0
+        },
+        {
+          "category": "0-29 Days",
+          "count": 0,
+          "balance": 0.0
+        },
+        {
+          "category": "30 Days",
+          "count": 0,
+          "balance": 0.0
+        },
+        {
+          "category": "60 Days",
+          "count": 0,
+          "balance": 0.0
+        },
+        {
+          "category": "90 Days",
+          "count": 0,
+          "balance": 0.0
+        },
+        {
+          "category": "120 Days",
+          "count": 0,
+          "balance": 0.0
+        },
+        {
+          "category": "150 Days",
+          "count": 0,
+          "balance": 0.0
+        },
+        {
+          "category": "180+ Days",
+          "count": 0,
+          "balance": 0.0
+        },
+        {
+          "category": "0-29 Days",
+          "count": 0,
+          "balance": 0.0
+        },
+        {
+          "category": "30 Days",
+          "count": 0,
+          "balance": 0.0
+        },
+        {
+          "category": "60 Days",
+          "count": 0,
+          "balance": 0.0
+        },
+        {
+          "category": "90 Days",
+          "count": 0,
+          "balance": 0.0
+        },
+        {
+          "category": "120 Days",
+          "count": 0,
+          "balance": 0.0
+        },
+        {
+          "category": "150 Days",
+          "count": 0,
+          "balance": 0.0
+        },
+        {
+          "category": "180+ Days",
+          "count": 0,
+          "balance": 0.0
+        },
+        {
+          "category": "0-29 Days",
+          "count": 0,
+          "balance": 0.0
+        },
+        {
+          "category": "30 Days",
+          "count": 1,
+          "balance": 759755.06
+        },
+        {
+          "category": "60 Days",
+          "count": 0,
+          "balance": 0.0
+        },
+        {
+          "category": "90 Days",
+          "count": 0,
+          "balance": 0.0
+        },
+        {
+          "category": "120 Days",
+          "count": 0,
+          "balance": 0.0
+        },
+        {
+          "category": "150 Days",
+          "count": 0,
+          "balance": 0.0
+        },
+        {
+          "category": "180+ Days",
+          "count": 0,
+          "balance": 0.0
+        }
+      ],
+      "filename": "50.pdf"
+    },
+    "error": null,
+    "processing_time": 5.407389879226685,
+    "approach": "pdf_text_gemini",
+    "text_extraction_metadata": {
+      "pages": 28,
+      "tables_found": 56,
+      "method": "pdfplumber"
+    },
+    "hybrid_method": "text",
+    "validation": {
+      "has_errors": false,
+      "has_warnings": true,
+      "errors": [],
+      "warnings": [
+        "Balance sum mismatch: 99.6% difference"
+      ],
+      "checks_passed": [
+        "CATEGORY COUNT CHECK PASSED: Found 27 categories (minimum: 2)"
+      ],
+      "checks_failed": [
+        "BALANCE SUM CHECK FAILED: Delinquency sum ($1,519,510.12) differs by 99.6% from ending balance ($371,460,713.33)"
+      ],
+      "confidence_score": 70
+    }
+  },
+  {
+    "filename": "6.pdf",
+    "success": true,
+    "data": {
+      "series_name": "Series 2016-C05",
+      "report_date": "10/25/2017",
+      "beginning_balance": 32963473474.72,
+      "ending_balance": 32512759489.53,
+      "delinquency": [
+        {
+          "category": "30 Days",
+          "count": 1036,
+          "balance": 221779851.71
+        },
+        {
+          "category": "60 Days",
+          "count": 194,
+          "balance": 42829087.24
+        },
+        {
+          "category": "90 Days",
+          "count": 78,
+          "balance": 17620299.33
+        },
+        {
+          "category": "120 Days",
+          "count": 54,
+          "balance": 12464902.59
+        },
+        {
+          "category": "150 Days",
+          "count": 48,
+          "balance": 9381951.54
+        },
+        {
+          "category": "180+ Days",
+          "count": 128,
+          "balance": 28882058.88
+        }
+      ],
+      "filename": "6.pdf"
+    },
+    "error": null,
+    "processing_time": 2.7020580768585205,
+    "approach": "pdf_text_gemini",
+    "text_extraction_metadata": {
+      "pages": 21,
+      "tables_found": 59,
+      "method": "pdfplumber"
+    },
+    "hybrid_method": "text",
+    "validation": {
+      "has_errors": false,
+      "has_warnings": true,
+      "errors": [],
+      "warnings": [
+        "Balance sum mismatch: 99.0% difference"
+      ],
+      "checks_passed": [
+        "CATEGORY COUNT CHECK PASSED: Found 6 categories (minimum: 2)"
+      ],
+      "checks_failed": [
+        "BALANCE SUM CHECK FAILED: Delinquency sum ($332,958,151.29) differs by 99.0% from ending balance ($32,512,759,489.53)"
+      ],
+      "confidence_score": 70
+    }
+  },
+  {
+    "filename": "7.pdf",
+    "success": true,
+    "data": {
+      "series_name": "Series 2017-HL2",
+      "report_date": "08/26/2024",
+      "beginning_balance": 74945264.93,
+      "ending_balance": 74189522.95,
+      "delinquency": [
+        {
+          "category": "30 Days",
+          "count": 1,
+          "balance": 749243.81
+        },
+        {
+          "category": "60 Days",
+          "count": 0,
+          "balance": 0.0
+        },
+        {
+          "category": "90 Days",
+          "count": 1,
+          "balance": 601534.54
+        },
+        {
+          "category": "120 Days",
+          "count": 0,
+          "balance": 0.0
+        },
+        {
+          "category": "150 Days",
+          "count": 1,
+          "balance": 463202.12
+        },
+        {
+          "category": "180+ Days",
+          "count": 0,
+          "balance": 0.0
+        }
+      ],
+      "filename": "7.pdf"
+    },
+    "error": null,
+    "processing_time": 3.097532033920288,
+    "approach": "pdf_text_gemini",
+    "text_extraction_metadata": {
+      "pages": 28,
+      "tables_found": 55,
+      "method": "pdfplumber"
+    },
+    "hybrid_method": "text",
+    "validation": {
+      "has_errors": false,
+      "has_warnings": true,
+      "errors": [],
+      "warnings": [
+        "Balance sum mismatch: 97.6% difference"
+      ],
+      "checks_passed": [
+        "CATEGORY COUNT CHECK PASSED: Found 6 categories (minimum: 2)"
+      ],
+      "checks_failed": [
+        "BALANCE SUM CHECK FAILED: Delinquency sum ($1,813,980.47) differs by 97.6% from ending balance ($74,189,522.95)"
+      ],
+      "confidence_score": 70
+    }
+  },
+  {
+    "filename": "8.pdf",
+    "success": true,
+    "data": {
+      "series_name": "Series 2016-C05",
+      "report_date": "08/25/2017",
+      "beginning_balance": 33784522948.84,
+      "ending_balance": 33355641966.23,
+      "delinquency": [
+        {
+          "category": "30 Days",
+          "count": 1011,
+          "balance": 220204600.67
+        },
+        {
+          "category": "60 Days",
+          "count": 152,
+          "balance": 33432946.03
+        },
+        {
+          "category": "90 Days",
+          "count": 68,
+          "balance": 14473779.39
+        },
+        {
+          "category": "120 Days",
+          "count": 58,
+          "balance": 11882597.63
+        },
+        {
+          "category": "150 Days",
+          "count": 41,
+          "balance": 9817917.43
+        },
+        {
+          "category": "180+ Days",
+          "count": 107,
+          "balance": 23957786.77
+        }
+      ],
+      "filename": "8.pdf"
+    },
+    "error": null,
+    "processing_time": 3.29551100730896,
+    "approach": "pdf_text_gemini",
+    "text_extraction_metadata": {
+      "pages": 21,
+      "tables_found": 58,
+      "method": "pdfplumber"
+    },
+    "hybrid_method": "text",
+    "validation": {
+      "has_errors": false,
+      "has_warnings": true,
+      "errors": [],
+      "warnings": [
+        "Balance sum mismatch: 99.1% difference"
+      ],
+      "checks_passed": [
+        "CATEGORY COUNT CHECK PASSED: Found 6 categories (minimum: 2)"
+      ],
+      "checks_failed": [
+        "BALANCE SUM CHECK FAILED: Delinquency sum ($313,769,627.92) differs by 99.1% from ending balance ($33,355,641,966.23)"
+      ],
+      "confidence_score": 70
+    }
+  },
+  {
+    "filename": "9.pdf",
+    "success": true,
+    "data": {
+      "series_name": "Series 2023-HQA1",
+      "report_date": "09/25/2024",
+      "beginning_balance": 12416578237.91,
+      "ending_balance": 12348291193.21,
+      "delinquency": [
+        {
+          "category": "30 Day",
+          "count": 273,
+          "balance": 91279874.0
+        },
+        {
+          "category": "60 Day",
+          "count": 79,
+          "balance": 24964048.0
+        },
+        {
+          "category": "90 Day",
+          "count": 45,
+          "balance": 15927318.0
+        },
+        {
+          "category": "120 Day",
+          "count": 25,
+          "balance": 8904106.0
+        },
+        {
+          "category": "150 Day",
+          "count": 17,
+          "balance": 4783024.0
+        },
+        {
+          "category": "180+ Day",
+          "count": 54,
+          "balance": 20765429.0
+        },
+        {
+          "category": "Bankruptcy",
+          "count": 56,
+          "balance": 18022626.0
+        },
+        {
+          "category": "Foreclosure",
+          "count": 13,
+          "balance": 3683555.0
+        },
+        {
+          "category": "REO",
+          "count": 0,
+          "balance": 0.0
+        }
+      ],
+      "filename": "9.pdf"
+    },
+    "error": null,
+    "processing_time": 3.4883251190185547,
+    "approach": "pdf_text_gemini",
+    "text_extraction_metadata": {
+      "pages": 28,
+      "tables_found": 30,
+      "method": "pdfplumber"
+    },
+    "hybrid_method": "text",
+    "validation": {
+      "has_errors": false,
+      "has_warnings": true,
+      "errors": [],
+      "warnings": [
+        "Balance sum mismatch: 98.5% difference"
+      ],
+      "checks_passed": [
+        "CATEGORY COUNT CHECK PASSED: Found 9 categories (minimum: 2)"
+      ],
+      "checks_failed": [
+        "BALANCE SUM CHECK FAILED: Delinquency sum ($188,329,980.00) differs by 98.5% from ending balance ($12,348,291,193.21)"
+      ],
+      "confidence_score": 70
+    }
+  }
+]
